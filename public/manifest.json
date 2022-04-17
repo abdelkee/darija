@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Tahar babouche",
-    "short_name": "TB",
-    "description": "tahar babouche business app",
+    "name": "Darija",
+    "short_name": "Darija",
+    "description": "Darija language app",
     "icons": [
         {
             "src": "/icon-192x192.png",
