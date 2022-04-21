@@ -1,14 +1,14 @@
-import client from "../graphql/gqlClient"
-import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORIES, GET_VOCAB_CATEGORY } from "../graphql/queries"
+import client from "../../graphql/gqlClient"
+import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORIES, GET_VOCAB_CATEGORY } from "../../graphql/queries"
 
 import { Container, useDisclosure, VStack } from "@chakra-ui/react"
 
-import AddNewButton from "../components/Vocab/AddNewButton"
-import WordDetails from "../components/Vocab/WordDetails"
-import WordForm from "../components/Vocab/WordForm"
+import AddNewButton from "../../components/Vocab/AddNewButton"
+import WordDetails from "../../components/Vocab/WordDetails"
+import WordForm from "../../components/Vocab/WordForm"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { setAppBarHeading } from "../redux/reducers/globalReducer"
+import { setAppBarHeading } from "../../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
 
 export const getStaticPaths = async () => {
