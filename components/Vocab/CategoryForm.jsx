@@ -5,6 +5,7 @@ import { GET_VOCAB_CATEGORIES } from "../../graphql/queries"
 import { ADD_NEW_VOCAB_CATEGORY, PUBLISH_NEW_CATEGORY } from "../../graphql/mutations"
 import { colors } from "../../utils/theme"
 import client from "../../graphql/gqlClient"
+import AlertBox from "./AlertBox"
 
 export default function CategoryForm({isOpen, onClose}) {
     const [inputVal, setInputVal] = useState('')             
@@ -16,7 +17,7 @@ export default function CategoryForm({isOpen, onClose}) {
                 data: {name: inputVal, slug: inputVal.toLowerCase().split(' ').join('-')}
             }
         })
-        if (!data) return <AlertBox>Error !!</AlertBox>
+        if (!data) return <AlertBox />
         await client.mutate({
             mutation: PUBLISH_NEW_CATEGORY,
             variables: {

@@ -32,9 +32,9 @@ export default function SearchBar() {
               <InputLeftAddon
                   onClick={() => dispatch(setSearchBarOpen(false))}
                   as={'button'}
-                  bgColor={colors.shade}
-                  children={<HiOutlineChevronRight size={24}/>}
-                  />
+                  bgColor={colors.shade}>
+                    <HiOutlineChevronRight size={24}/>
+              </InputLeftAddon>
               <Input 
                   autoFocus={true}
                   bgColor={'white'}

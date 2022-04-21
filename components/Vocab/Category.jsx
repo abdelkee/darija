@@ -5,7 +5,7 @@ import { colors } from "../../utils/theme";
 export default function Category({category}) {
   return (
     <VStack>
-      <Link href={`/${category.slug}`}>
+      <Link href={`/${category.slug}`} passHref >
           <Circle
             bgGradient={`linear(to-b, purple.300, pink.400)`}
             size={"32"}>
@@ -18,6 +18,7 @@ export default function Category({category}) {
                       width={'20'}
                       height={'20'} 
                       objectFit={'cover'}
+                      alt={category.name}
                       />
               </Circle>
           </Circle>

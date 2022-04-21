@@ -17,7 +17,7 @@ export default function Body() {
   
   useEffect(() => {
     dispatch(setAppBarHeading('Vocabulario'))
-  }, [])
+  }, [dispatch])
 
     
   return (
