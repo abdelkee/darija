@@ -17,7 +17,7 @@ export default function WordForm({isOpen, onClose, category}) {
     const dispatch = useDispatch()
         
     const submit = async() => {
-        const { data } = await client.mutate({
+        const response = await client.mutate({
             mutation: ADD_NEW_VOCAB_CARD,
             variables: { data: {
                 arName: arNameVal,
@@ -26,7 +26,7 @@ export default function WordForm({isOpen, onClose, category}) {
                 category: {connect: {name: category.name}}
             }}
         })
-        if (!data) return <AlertBox>Error !!</AlertBox>
+        if (!response.data) return <AlertBox />
         await client.mutate({
             mutation: PUBLISH_NEW_CARD,
             variables: {

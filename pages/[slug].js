@@ -12,11 +12,11 @@ import { setAppBarHeading } from "../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
 
 export const getStaticPaths = async () => {
-    const { data } = await client.query({
+    const response = await client.query({
         query: GET_VOCAB_CATEGORIES
     })
     return {
-        paths: data.categories.map(category => {
+        paths: response.data.categories.map(category => {
             return {
                 params: {
                     slug: category.slug,
@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({params}) => {    
-    const { data } = await client.query({
+    const response = await client.query({
         query: GET_VOCAB_CATEGORY,
         variables: {
             slug: params.slug
@@ -36,7 +36,7 @@ export const getStaticProps = async ({params}) => {
     })
     return {
         props: {
-            category: data.category
+            category: response.data.category
         }
     }
 }

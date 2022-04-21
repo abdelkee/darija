@@ -11,13 +11,13 @@ export default function CategoryForm({isOpen, onClose}) {
     const [inputVal, setInputVal] = useState('')             
         
     const submit = async() => {
-        const { data }  = await client.mutate({
+        const response  = await client.mutate({
             mutation: ADD_NEW_VOCAB_CATEGORY,
             variables: {
                 data: {name: inputVal, slug: inputVal.toLowerCase().split(' ').join('-')}
             }
         })
-        if (!data) return <AlertBox />
+        if (!response.data) return <AlertBox />
         await client.mutate({
             mutation: PUBLISH_NEW_CATEGORY,
             variables: {
