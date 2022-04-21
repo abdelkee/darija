@@ -46,7 +46,7 @@ export default function VocabCategory({category}) {
     const { loading, error, data } = useQuery(GET_VOCAB_CARDS, {variables: {slug: category.slug}})
     const dispatch = useDispatch()
 
-    useEffect(async() => {
+    useEffect(() => {
         dispatch(setAppBarHeading(category.name))
     }, [])
 
