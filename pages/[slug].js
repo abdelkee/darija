@@ -48,7 +48,7 @@ export default function VocabCategory({category}) {
 
     useEffect(() => {
         dispatch(setAppBarHeading(category.name))
-    }, [dispatch])
+    }, [dispatch, category.name])
 
   return (
     <Container pt={20} height='inherit' width='inherit' pos={'relative'} >
