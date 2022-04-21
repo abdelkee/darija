@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
         query: GET_VOCAB_CATEGORIES
     })
     return {
-        paths: response.data.categories.map(category => {
+        paths: response?.data.categories.map(category => {
             return {
                 params: {
                     slug: category.slug,
@@ -36,7 +36,7 @@ export const getStaticProps = async ({params}) => {
     })
     return {
         props: {
-            category: response.data.category
+            category: response?.data.category
         }
     }
 }
