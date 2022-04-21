@@ -14,7 +14,7 @@ export default function Body() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GET_VOCAB_CATEGORIES)
-  
+  console.log(data);
   useEffect(() => {
     dispatch(setAppBarHeading('Vocabulario'))
   }, [dispatch])
