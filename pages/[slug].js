@@ -15,7 +15,6 @@ export const getStaticPaths = async () => {
     const response = await client.query({
         query: GET_VOCAB_CATEGORIES
     })
-    if(!response) return { paths: [], fallback: true }
     return {
         paths: response.data.categories.map(category => {
             return {

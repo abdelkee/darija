@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Center, Container, SimpleGrid, useDisclosure } from "@chakra-ui/react";
+import { Center, Container, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
 
 import Category from "../components/Vocab/Category";
 import AddNewButton from "../components/Vocab/AddNewButton";
@@ -14,12 +14,11 @@ export default function Body() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GET_VOCAB_CATEGORIES)
-  console.log(data);
+
   useEffect(() => {
     dispatch(setAppBarHeading('Vocabulario'))
   }, [dispatch])
 
-    
   return (
     <Container 
         pt={20} 
@@ -27,14 +26,17 @@ export default function Body() {
         width='inherit' 
         pos={'relative'}>
             <Center>
+              {loading ? 
+              <Spinner size={"xl"}/>
+              :
               <SimpleGrid columns={2} spacingY={10} spacingX={6} paddingY={14} alignItems={'center'}>
                   {data && data.categories.map((category) => (
                     <Category key={category.id} category={category}/>
                     ))}
                   <AddNewButton onOpen={onOpen} isCategory={true}/>
-              </SimpleGrid>
+              </SimpleGrid>}
             </Center>
-            {<CategoryForm isOpen={isOpen} onClose={onClose}/>}
+            <CategoryForm isOpen={isOpen} onClose={onClose}/>
     </Container>
   )
 }
