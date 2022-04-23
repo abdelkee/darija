@@ -21,7 +21,7 @@ export default function CategoryForm({isOpen, onClose}) {
         await client.mutate({
             mutation: PUBLISH_NEW_CATEGORY,
             variables: {
-                id: data.createCategory.id
+                id: response.data.createCategory.id
             },
             refetchQueries: [{query: GET_VOCAB_CATEGORIES}],
         })

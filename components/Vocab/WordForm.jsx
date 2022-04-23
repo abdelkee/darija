@@ -32,7 +32,7 @@ export default function WordForm({isOpen, onClose, category}) {
         await client.mutate({
             mutation: PUBLISH_NEW_CARD,
             variables: {
-                id: data.createCard.id
+                id: response.data.createCard.id
             },
             refetchQueries: [{query: GET_VOCAB_CARDS, variables: {slug: category.slug}}]
         })
