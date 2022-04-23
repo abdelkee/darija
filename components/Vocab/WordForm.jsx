@@ -2,10 +2,12 @@ import { Button, Input, Modal, ModalContent, ModalOverlay, VStack } from "@chakr
 import { useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { useDispatch } from "react-redux"
+
 import client from "../../graphql/gqlClient"
 import { ADD_NEW_VOCAB_CARD, PUBLISH_NEW_CARD } from "../../graphql/mutations"
 import { GET_VOCAB_CARDS } from "../../graphql/queries"
 import { setIsChanged } from "../../redux/reducers/globalReducer"
+import { stringCap } from "../../utils/stringCap"
 import { colors } from "../../utils/theme"
 import AlertBox from "./AlertBox"
 
@@ -41,10 +43,6 @@ export default function WordForm({isOpen, onClose, category}) {
         onClose()
     }
 
-    const capitaliaze = (str) => {
-        return str.charAt(0).toUpperCase() + str.slice(1)
-    }
-
     return (
         <Modal isOpen={isOpen} onClose={onClose} size={"xs"}>
             <ModalOverlay />
@@ -55,14 +53,14 @@ export default function WordForm({isOpen, onClose, category}) {
                         value={arNameVal}
                         placeholder="Smiya" 
                         onChange={(e) => {
-                            setArNameVal(capitaliaze(e.target.value))
+                            setArNameVal(stringCap(e.target.value))
                         }}/>
                     <Input
                         textTransform={'capitalize'}
                         value={spNameVal}
                         placeholder="Nombre" 
                         onChange={(e) => {
-                            setSpNameVal(capitaliaze(e.target.value))
+                            setSpNameVal(stringCap(e.target.value))
                         }}/>
                     <Input
                         value={arLettersVal}

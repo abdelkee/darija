@@ -1,5 +1,5 @@
 import client from "../../graphql/gqlClient"
-import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORIES, GET_VOCAB_CATEGORY } from "../../graphql/queries"
+import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
 
 import { Container, useDisclosure, VStack } from "@chakra-ui/react"
 
@@ -11,32 +11,21 @@ import { useDispatch } from "react-redux"
 import { setAppBarHeading } from "../../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
 
-export const getStaticPaths = async () => {
-    const response = await client.query({
-        query: GET_VOCAB_CATEGORIES
-    })
-    return {
-        paths: response?.data.categories.map(category => {
-            return {
-                params: {
-                    slug: category.slug,
-                }
-            }
-        }),
-        fallback: true
-    }
-}
-
-export const getStaticProps = async ({params}) => {    
+export const getServerSideProps = async({params}) => {
     const response = await client.query({
         query: GET_VOCAB_CATEGORY,
         variables: {
             slug: params.slug
         }
     })
+    if(!response) {
+        return {
+            notFound: true
+        }
+    }
     return {
         props: {
-            category: response?.data.category
+            category: response.data.category
         }
     }
 }
