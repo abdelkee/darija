@@ -1,4 +1,4 @@
-import { Button, Input, Modal, ModalContent, ModalOverlay, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Input, Modal, ModalContent, ModalOverlay, Spinner, VStack } from "@chakra-ui/react"
 import { useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { useDispatch } from "react-redux"
@@ -16,9 +16,12 @@ export default function WordForm({isOpen, onClose, category}) {
     const [arNameVal, setArNameVal] = useState('')
     const [spNameVal, setSpNameVal] = useState('')
     const [arLettersVal, setArLettersVal] = useState('')
+    const [loading, setLoading] = useState(false)      
+
     const dispatch = useDispatch()
         
     const submit = async() => {
+        setLoading(true)
         const response = await client.mutate({
             mutation: ADD_NEW_VOCAB_CARD,
             variables: { data: {
@@ -41,6 +44,7 @@ export default function WordForm({isOpen, onClose, category}) {
         setSpNameVal('')
         setArLettersVal('')
         onClose()
+        setLoading(false)
     }
 
     return (
@@ -69,14 +73,17 @@ export default function WordForm({isOpen, onClose, category}) {
                         onChange={(e) => {
                             setArLettersVal(e.target.value)
                         }}/>
-                    <Button
-                        disabled={!arNameVal || !spNameVal || !arLettersVal && true}
+                    <Box
+                        as="button"
+                        p={2}
+                        borderRadius={'md'}
+                        disabled={!arNameVal || !spNameVal || !arLettersVal || loading && true}
                         onClick={submit} 
                         w='full'
                         color={colors.text2} 
-                        bgColor={colors.primary}>
-                            <HiPlus size={24}/>
-                    </Button>
+                        bgColor={!arNameVal || !spNameVal || !arLettersVal || loading ? 'gray.400' : colors.primary}>
+                            <Center>{loading ? <Spinner/> : <HiPlus size={24}/>}</Center>
+                    </Box>
                 </VStack>
             </ModalContent>
         </Modal>

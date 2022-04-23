@@ -1,4 +1,4 @@
-import { Circle, HStack, Input, Modal, ModalContent, ModalOverlay } from "@chakra-ui/react"
+import { Button, Circle, HStack, Input, Modal, ModalContent, ModalOverlay, Spinner } from "@chakra-ui/react"
 import { useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { GET_VOCAB_CATEGORIES } from "../../graphql/queries"
@@ -8,9 +8,11 @@ import client from "../../graphql/gqlClient"
 import AlertBox from "./AlertBox"
 
 export default function CategoryForm({isOpen, onClose}) {
-    const [inputVal, setInputVal] = useState('')             
+    const [inputVal, setInputVal] = useState('')          
+    const [loading, setLoading] = useState(false)      
         
     const submit = async() => {
+        setLoading(true)
         const response  = await client.mutate({
             mutation: ADD_NEW_VOCAB_CATEGORY,
             variables: {
@@ -27,6 +29,7 @@ export default function CategoryForm({isOpen, onClose}) {
         })
         setInputVal('')
         onClose()
+        setLoading(false)
     }
 
     return (
@@ -41,13 +44,13 @@ export default function CategoryForm({isOpen, onClose}) {
                             setInputVal(e.target.value)
                         }}/>
                     <Circle
-                        disabled={!inputVal && true}
-                        onClick={submit} 
+                        disabled={!inputVal || loading && true}
+                        onClick={submit}
                         as={'button'}
                         size={'40px'} 
                         color={colors.text2} 
-                        bgColor={colors.primary}>
-                            <HiPlus size={24}/>
+                        bgColor={!inputVal ? "gray.400" : colors.primary}>
+                            {loading ? <Spinner/> : <HiPlus size={24}/>}
                     </Circle>
                 </HStack>
             </ModalContent>
