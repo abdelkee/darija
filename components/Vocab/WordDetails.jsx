@@ -14,8 +14,9 @@ export default function WordDetails({card}) {
         fontWeight='bold'
         rounded='md'
         border={'1px'}
+        borderBottom={'4px'}
         borderColor={colors.secondary}
-        shadow={'md'}
+        // shadow={'md'}
         letterSpacing={1}> 
                 <VStack align={'start'}>
                   <Text color={colors.secondary} noOfLines={1} fontSize={'lg'}>{card.arName}</Text>

@@ -1,4 +1,4 @@
-import { Button, Circle, HStack, Input, Modal, ModalContent, ModalOverlay, Spinner } from "@chakra-ui/react"
+import { Button, Circle, HStack, Input, Modal, ModalContent, ModalOverlay, Spinner, Text, VStack } from "@chakra-ui/react"
 import { useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { GET_VOCAB_CATEGORIES } from "../../graphql/queries"
@@ -35,7 +35,9 @@ export default function CategoryForm({isOpen, onClose}) {
     return (
         <Modal isOpen={isOpen} onClose={onClose} size={"xs"}>
             <ModalOverlay />
-            <ModalContent p={8}>
+            <ModalContent p={6}>
+                <VStack spacing={6} align={'center'}>
+                <Text color={colors.text1} fontSize={'lg'} fontWeight={'bold'} letterSpacing={1} mb={2}>Nueva Categoria</Text>
                 <HStack spacing={4}>
                     <Input
                         value={inputVal}
@@ -53,6 +55,7 @@ export default function CategoryForm({isOpen, onClose}) {
                             {loading ? <Spinner/> : <HiPlus size={24}/>}
                     </Circle>
                 </HStack>
+                </VStack>
             </ModalContent>
         </Modal>
     )

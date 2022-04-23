@@ -1,4 +1,4 @@
-import { Box, Button, Center, Input, Modal, ModalContent, ModalOverlay, Spinner, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Input, Modal, ModalContent, ModalOverlay, Spinner, Text, VStack } from "@chakra-ui/react"
 import { useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { useDispatch } from "react-redux"
@@ -50,8 +50,9 @@ export default function WordForm({isOpen, onClose, category}) {
     return (
         <Modal isOpen={isOpen} onClose={onClose} size={"xs"}>
             <ModalOverlay />
-            <ModalContent p={8}>
+            <ModalContent p={4}>
                 <VStack spacing={4}>
+                    <Text color={colors.text1} fontSize={'lg'} fontWeight={'bold'} letterSpacing={1} mb={2}>Nueva Palabra</Text>
                     <Input
                         textTransform={'capitalize'}
                         value={arNameVal}

@@ -4,7 +4,7 @@ import Body from '../components/Body'
 export default function Home() {
 
   return (
-    <div>
+    <div style={{height: '100vh'}}>
       <Head>
         <title>Darija</title>
         <meta name="description" content="Darija language app" />

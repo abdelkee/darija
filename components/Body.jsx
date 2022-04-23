@@ -8,6 +8,7 @@ import CategoryForm from "../components/Vocab/CategoryForm";
 import { setAppBarHeading } from "../redux/reducers/globalReducer";
 import { useQuery } from "@apollo/client";
 import { GET_VOCAB_CATEGORIES } from "../graphql/queries";
+import FAB from "./Vocab/FAB";
 
 
 export default function Body() {
@@ -24,7 +25,8 @@ export default function Body() {
         pt={20} 
         height='inherit' 
         width='inherit' 
-        pos={'relative'}>
+        pos={'relative'}
+        >
             <Center>
               {loading ? 
               <Spinner size={"xl"}/>
@@ -33,7 +35,7 @@ export default function Body() {
                   {data && data.categories.map((category) => (
                     <Category key={category.id} category={category}/>
                     ))}
-                  <AddNewButton onOpen={onOpen} isCategory={true}/>
+                  <FAB onOpen={onOpen}/>
               </SimpleGrid>}
             </Center>
             <CategoryForm isOpen={isOpen} onClose={onClose}/>

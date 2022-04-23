@@ -1,7 +1,7 @@
 import client from "../../graphql/gqlClient"
 import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
 
-import { Container, useDisclosure, VStack } from "@chakra-ui/react"
+import { Center, Container, Spinner, useDisclosure, VStack } from "@chakra-ui/react"
 
 import AddNewButton from "../../components/Vocab/AddNewButton"
 import WordDetails from "../../components/Vocab/WordDetails"
@@ -10,6 +10,7 @@ import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { setAppBarHeading } from "../../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
+import FAB from "../../components/Vocab/FAB"
 
 export const getServerSideProps = async({params}) => {
     const response = await client.query({
@@ -40,13 +41,17 @@ export default function VocabCategory({category}) {
     }, [dispatch, category.name])
 
   return (
-    <Container pt={20} height='inherit' width='inherit' pos={'relative'} >
-        <VStack spacing={4} paddingY={14} justify={'start'}>
+    <Container pt={20} height={'100vh'} width='inherit' pos={'relative'} >
+        {loading ?
+        <Center>
+            <Spinner size={'lg'}/>
+        </Center>
+        : <VStack spacing={4} paddingY={14} justify={'start'}>
             {data && data.cards.map((card) => (
                 <WordDetails key={card.id} card={card}/>
             ))}
-            <AddNewButton onOpen={onOpen} isCategory={false}/>
-        </VStack>
+            <FAB onOpen={onOpen}/>
+        </VStack>}
         <WordForm isOpen={isOpen} onClose={onClose} category={category} />
     </Container>
   )
