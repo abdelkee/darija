@@ -8,6 +8,7 @@ import { setAppBarHeading } from "../redux/reducers/globalReducer";
 import { useQuery } from "@apollo/client";
 import { GET_VOCAB_CATEGORIES } from "../graphql/queries";
 import FAB from "./Vocab/FAB";
+import EditButton from "./Vocab/EditButton";
 
 
 export default function Body() {
@@ -32,12 +33,13 @@ export default function Body() {
               :
               <SimpleGrid columns={2} spacingY={10} spacingX={6} paddingY={14} alignItems={'center'}>
                   {data && data.categories.map((category) => (
-                    <Category key={category.id} category={category}/>
+                    <Category key={category.id} category={category} onOpen={onOpen}/>
                     ))}
                   <FAB onOpen={onOpen}/>
               </SimpleGrid>}
             </Center>
-            <CategoryForm isOpen={isOpen} onClose={onClose}/>
+            <CategoryForm isOpen={isOpen} onClose={onClose} />
+            <EditButton/>
     </Container>
   )
 }

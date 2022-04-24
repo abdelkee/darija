@@ -7,26 +7,32 @@ import { colors } from "../../utils/theme"
 import client from "../../graphql/gqlClient"
 import AlertBox from "./AlertBox"
 
-export default function CategoryForm({isOpen, onClose}) {
+export default function CategoryForm({isOpen, onClose, categoryId = ''}) {
     const [inputVal, setInputVal] = useState('')          
     const [loading, setLoading] = useState(false)      
         
     const submit = async() => {
         setLoading(true)
         const response  = await client.mutate({
-            mutation: ADD_NEW_VOCAB_CATEGORY,
-            variables: {
-                data: {name: inputVal, slug: inputVal.toLowerCase().split(' ').join('-')}
+            mutation: categoryId === '' ? ADD_NEW_VOCAB_CATEGORY : UPDATE_CATEGORY,
+            variables: categoryId === '' ? {
+                data: {name: inputVal, slug: inputVal.toLowerCase().split(' ').join('-')},
+            } :
+            {
+                data: {name: inputVal, slug: inputVal.toLowerCase().split(' ').join('-')},
+                where: {id: categoryId}
             }
         })
         if (!response.data) return <AlertBox />
-        await client.mutate({
-            mutation: PUBLISH_NEW_CATEGORY,
-            variables: {
-                id: response.data.createCategory.id
-            },
-            refetchQueries: [{query: GET_VOCAB_CATEGORIES}],
-        })
+        if(categoryId === '') {
+            await client.mutate({
+                mutation: PUBLISH_NEW_CATEGORY,
+                variables: {
+                    id: response.data.createCategory.id
+                },
+                refetchQueries: [{query: GET_VOCAB_CATEGORIES}],
+            })
+        }
         setInputVal('')
         onClose()
         setLoading(false)
