@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { Center, Container, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
 
 import Category from "../components/Vocab/Category";
-import AddNewButton from "../components/Vocab/AddNewButton";
 import CategoryForm from "../components/Vocab/CategoryForm";
 import { setAppBarHeading } from "../redux/reducers/globalReducer";
 import { useQuery } from "@apollo/client";

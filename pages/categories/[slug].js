@@ -1,9 +1,8 @@
 import client from "../../graphql/gqlClient"
 import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
 
-import { Center, Container, Spinner, useDisclosure, VStack } from "@chakra-ui/react"
+import { Center, Container, Spinner, Text, useDisclosure, VStack } from "@chakra-ui/react"
 
-import AddNewButton from "../../components/Vocab/AddNewButton"
 import WordDetails from "../../components/Vocab/WordDetails"
 import WordForm from "../../components/Vocab/WordForm"
 import { useEffect } from "react"
@@ -47,9 +46,13 @@ export default function VocabCategory({category}) {
             <Spinner size={'lg'}/>
         </Center>
         : <VStack spacing={4} paddingY={14} justify={'start'}>
-            {data && data.cards.map((card) => (
+            {data.cards.length > 0 ? data.cards.map((card) => (
                 <WordDetails key={card.id} card={card}/>
-            ))}
+            ))
+            : 
+            <Center>
+                <Text fontWeight={'semibold'} letterSpacing={1} color={'purple.300'} >Añade la primera palabra de {category.name}</Text>
+            </Center>}
             <FAB onOpen={onOpen}/>
         </VStack>}
         <WordForm isOpen={isOpen} onClose={onClose} category={category} />
