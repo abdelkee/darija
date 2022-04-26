@@ -7,6 +7,7 @@ import { store } from '../redux/store'
 import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <ApolloProvider client={client}>
       <Provider store={store}>

@@ -32,3 +32,9 @@ export const PUBLISH_NEW_CARD = gql`
                 
         }
 `
+
+export const DELETE_CATEGORY = gql`
+    mutation deleteCategory($id: ID!) {
+        deleteCategory(where: {id: $id}) { name }
+    }
+`

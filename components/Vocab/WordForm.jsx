@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux"
 import client from "../../graphql/gqlClient"
 import { ADD_NEW_VOCAB_CARD, PUBLISH_NEW_CARD } from "../../graphql/mutations"
 import { GET_VOCAB_CARDS } from "../../graphql/queries"
-import { setIsChanged } from "../../redux/reducers/globalReducer"
 import { stringCap } from "../../utils/stringCap"
 import { colors } from "../../utils/theme"
 import AlertBox from "./AlertBox"
@@ -39,7 +38,6 @@ export default function WordForm({isOpen, onClose, category}) {
             },
             refetchQueries: [{query: GET_VOCAB_CARDS, variables: {slug: category.slug}}]
         })
-        dispatch(setIsChanged())
         setArNameVal('')
         setSpNameVal('')
         setArLettersVal('')

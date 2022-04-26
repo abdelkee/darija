@@ -7,9 +7,10 @@ export default function FAB({onOpen}) {
     <Circle
         pos={'fixed'}
         bottom={8}
-        right={8}
+        right={{base: 8, "sm": '50%'}}
+        transform={{"sm": 'translateX(50%)'}}
         size={16}
-        as="button"
+        as={'button'}
         bgGradient={`linear(to-b, ${colors.primary}, ${colors.secondary})`}
         border={'1px'}
         borderColor={colors.primary}

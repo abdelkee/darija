@@ -10,7 +10,8 @@ export default function EditButton() {
   return (
     <Circle
         onClick={() => dispatch(setIsEditMode())} 
-        pos={'fixed'} 
+        pos={'absolute'}
+        as={'button'}
         right={4} 
         top={16} 
         bg={'white'} 

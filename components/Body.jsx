@@ -4,7 +4,7 @@ import { Center, Container, SimpleGrid, Spinner, useDisclosure } from "@chakra-u
 
 import Category from "../components/Vocab/Category";
 import CategoryForm from "../components/Vocab/CategoryForm";
-import { setAppBarHeading } from "../redux/reducers/globalReducer";
+import { setAppBarHeading, setSelectedCategory } from "../redux/reducers/globalReducer";
 import { useQuery } from "@apollo/client";
 import { GET_VOCAB_CATEGORIES } from "../graphql/queries";
 import FAB from "./Vocab/FAB";
@@ -20,15 +20,19 @@ export default function Body() {
     dispatch(setAppBarHeading('Vocabulario'))
   }, [dispatch])
 
+  useEffect(() => {
+    if (!isOpen) {
+      dispatch(setSelectedCategory(null))
+    }
+  }, [dispatch, isOpen])
+
   return (
-    <Container 
+    <Center
         pt={20} 
-        height='inherit' 
-        width='inherit' 
-        pos={'relative'}
+        minH='100vh'
+        width='100%' 
         >
-            <Center>
-              {loading ? 
+            {loading ?
               <Spinner size={"xl"}/>
               :
               <SimpleGrid columns={2} spacingY={10} spacingX={6} paddingY={14} alignItems={'center'}>
@@ -37,9 +41,7 @@ export default function Body() {
                     ))}
                   <FAB onOpen={onOpen}/>
               </SimpleGrid>}
-            </Center>
             <CategoryForm isOpen={isOpen} onClose={onClose} />
-            <EditButton/>
-    </Container>
+    </Center>
   )
 }

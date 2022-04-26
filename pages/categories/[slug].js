@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux"
 import { setAppBarHeading } from "../../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
 import FAB from "../../components/Vocab/FAB"
+import EditButton from "../../components/Vocab/EditButton"
 
 export const getServerSideProps = async({params}) => {
     const response = await client.query({
@@ -40,7 +41,7 @@ export default function VocabCategory({category}) {
     }, [dispatch, category.name])
 
   return (
-    <Container pt={20} height={'100vh'} width='inherit' pos={'relative'} >
+    <Container pt={20} height={'100vh'} width='100%' pos={'relative'} >
         {loading ?
         <Center>
             <Spinner size={'lg'}/>
@@ -53,8 +54,8 @@ export default function VocabCategory({category}) {
             <Center>
                 <Text fontWeight={'semibold'} letterSpacing={1} color={'purple.300'} >Añade la primera palabra de {category.name}</Text>
             </Center>}
-            <FAB onOpen={onOpen}/>
         </VStack>}
+        <FAB onOpen={onOpen}/>
         <WordForm isOpen={isOpen} onClose={onClose} category={category} />
     </Container>
   )

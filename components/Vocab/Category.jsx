@@ -11,7 +11,7 @@ import CategoryOptions from "./CategoryOptions";
 export default function Category({category, onOpen}) {
 
   return (
-    <VStack pos={'relative'}>
+    <VStack pos={'relative'} as={'a'}>
       <Link href={`/categories/${category.slug}`} passHref >
           <Circle
             bgGradient={`linear(to-b, purple.300, pink.400)`}
@@ -33,7 +33,7 @@ export default function Category({category, onOpen}) {
       <Text fontWeight={'bold'} fontSize={'lg'} letterSpacing={2} color={colors.text1}>
           {category.name}
       </Text>
-      <CategoryOptions/>
+      <CategoryOptions onOpen={onOpen} category={category}/>
       
     </VStack>
   )

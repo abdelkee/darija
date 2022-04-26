@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import SearchBar from "../components/Vocab/SearchBar";
 import { setSearchBarOpen } from "../redux/reducers/globalReducer";
 import { colors } from "../utils/theme";
+import EditButton from "./Vocab/EditButton";
 
 export default function AppBar() {
   const router = useRouter()
@@ -16,7 +17,7 @@ export default function AppBar() {
     <Box
       bgGradient={`linear(to-r, ${colors.primary}, ${colors.secondary})`} 
       color={colors.text2}
-      width={{base: "100%", lg: "50%"}}
+      width={{base: "100%", "sm": "60ch"}}
       height={"14"}
       pos={"fixed"}
       top={0}
@@ -45,6 +46,7 @@ export default function AppBar() {
               </HStack>
         </HStack>
         <SearchBar/>
+        {appBarHeading === 'Vocabulario' && <EditButton/>}
     </Box>
   )
 }

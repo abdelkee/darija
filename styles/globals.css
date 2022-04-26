@@ -26,5 +26,5 @@ a {
 
 button:active {
   opacity: 0.5;
-  transform: scale(0.95);
+  color: purple;
 }
