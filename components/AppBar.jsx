@@ -46,7 +46,8 @@ export default function AppBar() {
               </HStack>
         </HStack>
         <SearchBar/>
-        {appBarHeading === 'Vocabulario' && <EditButton/>}
+        {/* {appBarHeading === 'Vocabulario' && <EditButton/>} */}
+        <EditButton/>
     </Box>
   )
 }

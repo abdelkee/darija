@@ -25,7 +25,7 @@ export const GET_VOCAB_CATEGORY = gql`
                 id,
                 spName,
                 arName,
-                arLetters
+                plural
             }
         }
     }
@@ -37,7 +37,11 @@ export const GET_VOCAB_CARDS = gql`
             id,
             spName,
             arName,
-            arLetters
+            plural,
+            category {
+                id,
+                slug
+            }
         }
     }
 `

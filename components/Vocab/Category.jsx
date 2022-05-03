@@ -6,7 +6,7 @@ import { BiPencil, BiTrashAlt } from 'react-icons/bi';
 import { useSelector } from "react-redux";
 
 import { colors } from "../../utils/theme";
-import CategoryOptions from "./CategoryOptions";
+import Actions from "./Actions";
 
 export default function Category({category, onOpen}) {
 
@@ -33,7 +33,7 @@ export default function Category({category, onOpen}) {
       <Text fontWeight={'bold'} fontSize={'lg'} letterSpacing={2} color={colors.text1}>
           {category.name}
       </Text>
-      <CategoryOptions onOpen={onOpen} category={category}/>
+      <Actions onOpen={onOpen} trigger={category}/>
       
     </VStack>
   )

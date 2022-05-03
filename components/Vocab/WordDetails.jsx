@@ -1,52 +1,35 @@
-import { Circle, HStack, Stack, Text, VStack } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { BiPencil, BiTrash } from "react-icons/bi";
+import { Box, Center, Circle, HStack, Square, Stack, Text, VStack } from "@chakra-ui/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import { BiEdit, BiEditAlt, BiPencil, BiTrash } from "react-icons/bi";
+import { useSelector } from "react-redux";
 import { colors } from "../../utils/theme";
+import Actions from "./Actions";
 
 
-export default function WordDetails({card}) {
-  const MotionStack = motion(HStack)
+export default function WordDetails({card, onOpen}) {
 
   return (
-      <Stack pos={'relative'} w={'full'}>
-        <VStack zIndex={-1} w={'inherit'} p={4} align={'start'}>
-          <Circle 
-              as={'button'}
-              bg={'teal.500'}
-              size={8}
-              color={'white'}>
-            <BiPencil size={'20px'} />
-          </Circle>
-          <Circle 
-              as={'button'}
-              bg={'red.500'}
-              size={8}
-              color={'white'}>
-            <BiTrash size={'20px'} />
-          </Circle>
-        </VStack>
-    <MotionStack
-        drag="x"
-        dragConstraints={{ left: 80, right: 0 }}
-        pos={'absolute'}
-        width={'100%'}
-        bgColor={colors.accent2}
-        paddingY={4}
-        paddingX={4}
-        justify={"space-between"}
-        fontWeight='bold'
-        rounded='md'
-        border={'1px'}
-        borderBottom={'4px'}
-        borderColor={colors.secondary}
-        letterSpacing={1}> 
-                <VStack align={'start'}>
-                  <Text color={colors.secondary} noOfLines={1} fontSize={'lg'}>{card.arName}</Text>
-                  <Text color={'gray.500'} fontSize={'xs'}>{card.spName}</Text>
-                </VStack>
-                  <Text color={colors.shade3} fontSize={'md'}>{card.arLetters}</Text>
-                  
-    </MotionStack>
-    </Stack>
+        <HStack
+              pos={'relative'}
+              width={'100%'}
+              height={'100%'}
+              bg={'white'}
+              py={4}
+              px={8}
+              justify={"space-between"}
+              fontWeight='bold'
+              rounded='md'
+              border={'1px'}
+              borderBottom={'4px'}
+              borderColor={colors.secondary}
+              letterSpacing={1}> 
+                      <VStack align={'start'}>
+                          <Text rounded={'full'} color={colors.primary} fontSize={'lg'}>{card.arName}</Text>
+                          {card.plural && <Text rounded={'full'} color={colors.secondary} fontSize={'lg'}>{card.plural}</Text>}
+                      </VStack>
+                      <Text color={'gray.500'} fontSize={'xs'}>{card.spName}</Text>
+                      <Actions onOpen={onOpen} trigger={card}/>  
+          </HStack>
   )
 }

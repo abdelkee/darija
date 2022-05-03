@@ -3,7 +3,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { setSearchBarOpen } from "../../redux/reducers/globalReducer";
+import { setKeywordSearched, setSearchBarOpen } from "../../redux/reducers/globalReducer";
 import { colors } from "../../utils/theme";
 
 const MotionInputGroup = motion(InputGroup)
@@ -27,17 +27,19 @@ export default function SearchBar() {
           right={0} 
           width={'100%'} 
           bgColor={'white'} 
-          borderRadius={'md'}
           color={colors.text1}>
               <InputLeftAddon
                   onClick={() => dispatch(setSearchBarOpen(false))}
                   as={'button'}
+                  rounded={'none'}
                   bgColor={colors.shade}>
                     <HiOutlineChevronRight size={24}/>
               </InputLeftAddon>
               <Input 
+                  onChange={(e) => dispatch(setKeywordSearched(e.target.value.toLowerCase()))}
                   autoFocus={true}
                   bgColor={'white'}
+                  rounded={'none'}
                   type='search' 
                   placeholder='Q busca mi bebe?'
                   _focus={false} />

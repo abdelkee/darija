@@ -1,33 +1,31 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Center, Container, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
+import { Box, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
 
-import Category from "../components/Vocab/Category";
 import CategoryForm from "../components/Vocab/CategoryForm";
-import { setAppBarHeading, setSelectedCategory } from "../redux/reducers/globalReducer";
+import { setAppBarHeading, setItemToMutate } from "../redux/reducers/globalReducer";
 import { useQuery } from "@apollo/client";
 import { GET_VOCAB_CATEGORIES } from "../graphql/queries";
 import FAB from "./Vocab/FAB";
-import EditButton from "./Vocab/EditButton";
+import DataFiltered from "./DataFiltered";
 
 
 export default function Body() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GET_VOCAB_CATEGORIES)
-
   useEffect(() => {
     dispatch(setAppBarHeading('Vocabulario'))
   }, [dispatch])
 
   useEffect(() => {
     if (!isOpen) {
-      dispatch(setSelectedCategory(null))
+      dispatch(setItemToMutate(null))
     }
   }, [dispatch, isOpen])
 
   return (
-    <Center
+    <Box
         pt={20} 
         minH='100vh'
         width='100%' 
@@ -35,13 +33,11 @@ export default function Body() {
             {loading ?
               <Spinner size={"xl"}/>
               :
-              <SimpleGrid columns={2} spacingY={10} spacingX={6} paddingY={14} alignItems={'center'}>
-                  {data && data.categories.map((category) => (
-                    <Category key={category.id} category={category} onOpen={onOpen}/>
-                    ))}
+              <SimpleGrid columns={2} spacingY={10} spacingX={6} pt={14} pb={24} alignItems={'center'} >
+                  <DataFiltered data={data.categories} onOpen={onOpen} />
                   <FAB onOpen={onOpen}/>
               </SimpleGrid>}
             <CategoryForm isOpen={isOpen} onClose={onClose} />
-    </Center>
+    </Box>
   )
 }

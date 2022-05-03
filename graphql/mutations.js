@@ -10,7 +10,6 @@ export const ADD_NEW_VOCAB_CATEGORY = gql`
 export const PUBLISH_NEW_CATEGORY = gql`
     mutation publishCategory($id: ID!) {
         publishCategory(where: {id: $id}) { name }
-            
     }
 `
 
@@ -29,12 +28,17 @@ export const ADD_NEW_VOCAB_CARD = gql`
 export const PUBLISH_NEW_CARD = gql`
         mutation publishCard($id: ID!) {
             publishCard(where: {id: $id}) { spName }
-                
         }
 `
 
-export const DELETE_CATEGORY = gql`
-    mutation deleteCategory($id: ID!) {
-        deleteCategory(where: {id: $id}) { name }
+export const UPDATE_VOCAB_CARD = gql`
+    mutation updateCard($data: CardUpdateInput!, $where: CardWhereUniqueInput!) {
+        updateCard(data: $data, where: $where) { id }
+    }
+`
+
+export const DELETE_CARD = gql`
+    mutation deleteCard($where: CardWhereUniqueInput!) {
+        deleteCard(where: $where) { id }
     }
 `

@@ -1,16 +1,14 @@
-import client from "../../graphql/gqlClient"
-import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
-
-import { Center, Container, Spinner, Text, useDisclosure, VStack } from "@chakra-ui/react"
-
-import WordDetails from "../../components/Vocab/WordDetails"
-import WordForm from "../../components/Vocab/WordForm"
+import { Center, Container, Spinner, useDisclosure, VStack } from "@chakra-ui/react"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { setAppBarHeading } from "../../redux/reducers/globalReducer"
 import { useQuery } from "@apollo/client"
+
+import client from "../../graphql/gqlClient"
+import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
+import WordForm from "../../components/Vocab/WordForm"
+import { setAppBarHeading, setItemToMutate } from "../../redux/reducers/globalReducer"
 import FAB from "../../components/Vocab/FAB"
-import EditButton from "../../components/Vocab/EditButton"
+import DataFiltered from "../../components/DataFiltered"
 
 export const getServerSideProps = async({params}) => {
     const response = await client.query({
@@ -40,20 +38,20 @@ export default function VocabCategory({category}) {
         dispatch(setAppBarHeading(category.name))
     }, [dispatch, category.name])
 
+    useEffect(() => {
+        if (!isOpen) {
+          dispatch(setItemToMutate(null))
+        }
+    }, [dispatch, isOpen])
+
   return (
     <Container pt={20} height={'100vh'} width='100%' pos={'relative'} >
         {loading ?
         <Center>
             <Spinner size={'lg'}/>
         </Center>
-        : <VStack spacing={4} paddingY={14} justify={'start'}>
-            {data.cards.length > 0 ? data.cards.map((card) => (
-                <WordDetails key={card.id} card={card}/>
-            ))
-            : 
-            <Center>
-                <Text fontWeight={'semibold'} letterSpacing={1} color={'purple.300'} >Añade la primera palabra de {category.name}</Text>
-            </Center>}
+        : <VStack spacing={4} pt={14} pb={28} justify={'start'}>
+            <DataFiltered data={data.cards} onOpen={onOpen}/>
         </VStack>}
         <FAB onOpen={onOpen}/>
         <WordForm isOpen={isOpen} onClose={onClose} category={category} />

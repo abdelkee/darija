@@ -7,7 +7,8 @@ export const globalSlice = createSlice({
         appBarHeading: 'Vocabulario',
         isSearchBarOpen: false,
         isEditMode: false,
-        selectedCategory: null,
+        itemToMutate: null,
+        keywordSearched: '',
     },
     reducers: {
         setAppBarHeading: (state, action) => {
@@ -19,11 +20,19 @@ export const globalSlice = createSlice({
         setIsEditMode: (state) => {
             state.isEditMode = !state.isEditMode
         },
-        setSelectedCategory: (state, action) => {
-            state.selectedCategory = action.payload
+        setItemToMutate: (state, action) => {
+            state.itemToMutate = action.payload
+        },
+        setKeywordSearched: (state, action) => {
+            state.keywordSearched = action.payload
         }
     }
 })
 
-export const { setAppBarHeading, setSearchBarOpen, setIsEditMode, setSelectedCategory } = globalSlice.actions
+export const { 
+    setAppBarHeading, 
+    setSearchBarOpen, 
+    setIsEditMode, 
+    setItemToMutate,
+    setKeywordSearched } = globalSlice.actions
 export default globalSlice.reducer
