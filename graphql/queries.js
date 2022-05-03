@@ -18,9 +18,6 @@ export const GET_VOCAB_CATEGORY = gql`
             id,
             name,
             slug,
-            image {
-                url
-            },
             cards {
                 id,
                 spName,
