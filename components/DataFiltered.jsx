@@ -1,4 +1,4 @@
-import { Center } from "@chakra-ui/react"
+import { Center, Text } from "@chakra-ui/react"
 import { useSelector } from "react-redux"
 import Category from "./Vocab/Category"
 import WordDetails from "./Vocab/WordDetails"
