@@ -7,10 +7,10 @@ import { useDispatch, useSelector } from "react-redux";
 import client from "../../graphql/gqlClient";
 import { DELETE_CARD } from "../../graphql/mutations";
 import { GET_VOCAB_CARDS } from "../../graphql/queries";
-import { setItemToMutate } from "../../redux/reducers/globalReducer";
+import { setItemToMutate } from "../../redux/reducers/vocabReducer";
 
 export default function Actions({onOpen, trigger}) {
-    const { isEditMode, appBarHeading } = useSelector(state => state.general)
+    const { isEditMode, appBarHeading } = useSelector(state => state.vocabSlice)
     const MotionStack = motion(HStack)
     const dispatch = useDispatch()
     const toast = useToast()

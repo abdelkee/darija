@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Box, SimpleGrid, Spinner, useDisclosure } from "@chakra-ui/react";
+import { SimpleGrid, Spinner, useDisclosure, VStack } from "@chakra-ui/react";
 
-import CategoryForm from "../components/Vocab/CategoryForm";
-import { setAppBarHeading, setItemToMutate } from "../redux/reducers/globalReducer";
+import CategoryForm from "./CategoryForm";
+import { setAppBarHeading, setItemToMutate, setKeywordSearched, setSearchBarOpen } from "../../redux/reducers/vocabReducer";
 import { useQuery } from "@apollo/client";
-import { GET_VOCAB_CATEGORIES } from "../graphql/queries";
-import FAB from "./Vocab/FAB";
+import { GET_VOCAB_CATEGORIES } from "../../graphql/queries";
+import FAB from "./FAB";
 import DataFiltered from "./DataFiltered";
 
 
@@ -14,8 +14,11 @@ export default function Body() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GET_VOCAB_CATEGORIES)
+  
   useEffect(() => {
     dispatch(setAppBarHeading('Vocabulario'))
+    dispatch(setKeywordSearched(''))
+    dispatch(setSearchBarOpen(false))
   }, [dispatch])
 
   useEffect(() => {
@@ -25,7 +28,7 @@ export default function Body() {
   }, [dispatch, isOpen])
 
   return (
-    <Box
+    <VStack
         pt={20}
         px={8}
         minH='100vh'
@@ -39,6 +42,6 @@ export default function Body() {
                   <FAB onOpen={onOpen}/>
               </SimpleGrid>}
             <CategoryForm isOpen={isOpen} onClose={onClose} />
-    </Box>
+    </VStack>
   )
 }

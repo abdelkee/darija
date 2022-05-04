@@ -1,12 +1,12 @@
 import { Circle } from "@chakra-ui/react";
 import { BiPencil, BiX } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
-import { setIsEditMode } from "../../redux/reducers/globalReducer";
+import { setIsEditMode } from "../../redux/reducers/vocabReducer";
 import { colors } from "../../utils/theme";
 
 export default function EditButton() {
     const dispatch = useDispatch()
-    const { isEditMode } = useSelector(state => state.general)
+    const { isEditMode } = useSelector(state => state.vocabSlice)
   return (
     <Circle
         onClick={() => dispatch(setIsEditMode())} 

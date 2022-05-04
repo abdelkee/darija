@@ -12,7 +12,7 @@ import AlertBox from "./AlertBox"
 
 
 export default function WordForm({isOpen, onClose, category}) {
-    const { itemToMutate } = useSelector(state => state.general)
+    const { itemToMutate } = useSelector(state => state.vocabSlice)
     const [arNameVal, setArNameVal] = useState('')
     const [spNameVal, setSpNameVal] = useState('')
     const [pluralVal, setPluralVal] = useState('')

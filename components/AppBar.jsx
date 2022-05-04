@@ -4,14 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
 import SearchBar from "../components/Vocab/SearchBar";
-import { setSearchBarOpen } from "../redux/reducers/globalReducer";
+import { setSearchBarOpen } from "../redux/reducers/vocabReducer";
 import { colors } from "../utils/theme";
 import EditButton from "./Vocab/EditButton";
+import DrawerWindow from "./DrawerWindow";
 
 export default function AppBar() {
   const router = useRouter()
   const dispatch = useDispatch()
-  const { appBarHeading } = useSelector(state => state.general)
+  const { appBarHeading } = useSelector(state => state.vocabSlice)
 
   return (
     <Box
@@ -40,9 +41,7 @@ export default function AppBar() {
                   as="button">
                     <HiOutlineSearch size={24}/>
                 </Box>
-                <Box as="button">
-                    <HiMenuAlt2 size={24}/>
-                </Box>
+                <DrawerWindow/>
               </HStack>
         </HStack>
         <SearchBar/>

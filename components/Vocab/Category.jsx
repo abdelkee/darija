@@ -6,8 +6,8 @@ import Actions from "./Actions";
 
 export default function Category({category, onOpen}) {
   return (
-    <VStack pos={'relative'} as={'button'}>
-      <Link href={`/categories/${category.slug}`} passHref >
+    <VStack pos={'relative'}>
+      <Link href={`/vocab/${category.slug}`} passHref >
           <Circle
             bgGradient={`linear(to-b, purple.300, pink.400)`}
             size={"32"}>

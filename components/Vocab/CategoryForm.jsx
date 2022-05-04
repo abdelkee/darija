@@ -12,7 +12,7 @@ import { stringCap } from "../../utils/stringCap"
 export default function CategoryForm({isOpen, onClose}) {
     const [inputVal, setInputVal] = useState('')          
     const [loading, setLoading] = useState(false)
-    const { itemToMutate } = useSelector(state => state.general)
+    const { itemToMutate } = useSelector(state => state.vocabSlice)
     const toast = useToast()
         
     const submit = async() => {

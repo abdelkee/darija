@@ -3,7 +3,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { setKeywordSearched, setSearchBarOpen } from "../../redux/reducers/globalReducer";
+import { setKeywordSearched, setSearchBarOpen } from "../../redux/reducers/vocabReducer";
 import { colors } from "../../utils/theme";
 
 const MotionInputGroup = motion(InputGroup)
@@ -11,7 +11,7 @@ const MotionInputGroup = motion(InputGroup)
 export default function SearchBar() {
 
   const dispatch = useDispatch();
-  const { isSearchBarOpen } = useSelector(state => state.general)
+  const { isSearchBarOpen } = useSelector(state => state.vocabSlice)
 
 
   return (

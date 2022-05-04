@@ -6,9 +6,9 @@ import { useQuery } from "@apollo/client"
 import client from "../../graphql/gqlClient"
 import { GET_VOCAB_CARDS, GET_VOCAB_CATEGORY } from "../../graphql/queries"
 import WordForm from "../../components/Vocab/WordForm"
-import { setAppBarHeading, setItemToMutate } from "../../redux/reducers/globalReducer"
+import { setAppBarHeading, setItemToMutate, setKeywordSearched, setSearchBarOpen } from "../../redux/reducers/vocabReducer"
 import FAB from "../../components/Vocab/FAB"
-import DataFiltered from "../../components/DataFiltered"
+import DataFiltered from "../../components/Vocab/DataFiltered"
 
 export const getServerSideProps = async({params}) => {
     const response = await client.query({
@@ -36,6 +36,8 @@ export default function VocabCategory({category}) {
 
     useEffect(() => {
         dispatch(setAppBarHeading(category.name))
+        dispatch(setKeywordSearched(''))
+        dispatch(setSearchBarOpen(false))
     }, [dispatch, category.name])
 
     useEffect(() => {

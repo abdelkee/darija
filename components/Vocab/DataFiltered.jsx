@@ -1,12 +1,11 @@
 import { Center, Text } from "@chakra-ui/react"
 import { useSelector } from "react-redux"
-import Category from "./Vocab/Category"
-import WordDetails from "./Vocab/WordDetails"
-
+import Category from "./Category"
+import WordDetails from "./WordDetails"
 
 
 export default function DataFiltered({data, onOpen}) {
-    const { keywordSearched, appBarHeading } = useSelector(state => state.general)
+    const { keywordSearched, appBarHeading } = useSelector(state => state.vocabSlice)
 
     if(keywordSearched === '') {
         return (
@@ -29,13 +28,13 @@ export default function DataFiltered({data, onOpen}) {
         if(appBarHeading === 'Vocabulario') {
             return (
                 data.filter(each => {
-                    return each.name.toLowerCase().includes(keywordSearched)
+                    return each.name?.toLowerCase().includes(keywordSearched)
                 }).map((category) =>( <Category key={category.id} category={category} onOpen={onOpen}/> ))
             )
         } else {
             return (
                 data.filter(each => {
-                    return each.spName.toLowerCase().includes(keywordSearched) || each.arName.toLowerCase().includes(keywordSearched)
+                    return each.spName?.toLowerCase().includes(keywordSearched) || each.arName?.toLowerCase().includes(keywordSearched)
                 }).map((card) =>( <WordDetails key={card.id} card={card} onOpen={onOpen}/> ))
             )
         }
