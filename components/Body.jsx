@@ -26,7 +26,8 @@ export default function Body() {
 
   return (
     <Box
-        pt={20} 
+        pt={20}
+        px={8}
         minH='100vh'
         width='100%' 
         >

@@ -1,17 +1,12 @@
-import { Button, Circle, HStack, Image, Text, VStack } from "@chakra-ui/react";
-import { AnimatePresence, motion } from "framer-motion";
+import { Circle, Image, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
-import { useState } from "react";
-import { BiPencil, BiTrashAlt } from 'react-icons/bi';
-import { useSelector } from "react-redux";
 
 import { colors } from "../../utils/theme";
 import Actions from "./Actions";
 
 export default function Category({category, onOpen}) {
-
   return (
-    <VStack pos={'relative'} as={'a'}>
+    <VStack pos={'relative'} as={'button'}>
       <Link href={`/categories/${category.slug}`} passHref >
           <Circle
             bgGradient={`linear(to-b, purple.300, pink.400)`}
@@ -21,7 +16,7 @@ export default function Category({category, onOpen}) {
                 bgColor={'white'}
                 overflow={'hidden'}>
                     <Image 
-                      src={category.image === null ? '/darijaIcon.png' : category.image.url }
+                      src={category.image === null ? '/darijaIcon.png' : category.image?.url }
                       width={'20'}
                       height={'20'} 
                       objectFit={'cover'}
