@@ -1,4 +1,4 @@
-import { Box, Center, Input, Modal, ModalContent, ModalOverlay, Spinner, Text, useToast, VStack } from "@chakra-ui/react"
+import { Box, Center, HStack, Input, Modal, ModalContent, ModalOverlay, Radio, RadioGroup, Spinner, Text, useToast, VStack } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 import { HiPlus } from 'react-icons/hi'
 import { useSelector } from "react-redux"
@@ -12,22 +12,26 @@ import AlertBox from "./AlertBox"
 
 
 export default function WordForm({isOpen, onClose, category}) {
+    const initialValue = 'Masculino'
     const { itemToMutate } = useSelector(state => state.vocabSlice)
     const [arNameVal, setArNameVal] = useState('')
     const [spNameVal, setSpNameVal] = useState('')
     const [pluralVal, setPluralVal] = useState('')
+    const [genderVal, setGenderVal] = useState(initialValue)
     const [loading, setLoading] = useState(false)
-    const toast = useToast()    
-        
+    const toast = useToast()
+    
     useEffect(() => {
         if(itemToMutate !== null) {
             setArNameVal(itemToMutate.arName)
             setSpNameVal(itemToMutate.spName)
             setPluralVal(itemToMutate.plural || '')
+            setGenderVal(itemToMutate.gender)
         } else {
             setArNameVal('')
             setSpNameVal('')
             setPluralVal('')
+            setGenderVal(initialValue)
         }
     }, [itemToMutate])
 
@@ -40,6 +44,7 @@ export default function WordForm({isOpen, onClose, category}) {
                     arName: arNameVal,
                     spName: spNameVal,
                     plural: pluralVal,
+                    gender: genderVal,
                     category: {connect: {name: category.name}}}} 
                 : 
                 { 
@@ -47,6 +52,7 @@ export default function WordForm({isOpen, onClose, category}) {
                         arName: arNameVal,
                         spName: spNameVal,
                         plural: pluralVal,
+                        gender: genderVal,
                         category: {connect: {name: category.name}}},
                     where: {id: itemToMutate.id}}
         })
@@ -61,6 +67,7 @@ export default function WordForm({isOpen, onClose, category}) {
         setArNameVal('')
         setSpNameVal('')
         setPluralVal('')
+        setGenderVal(initialValue)
         onClose()
         setLoading(false)
         toast({
@@ -98,6 +105,24 @@ export default function WordForm({isOpen, onClose, category}) {
                         onChange={(e) => {
                             setPluralVal(stringCap(e.target.value))
                         }}/>
+                    <RadioGroup defaultValue={genderVal}>
+                        <HStack spacing={5} mb={4}>
+                            <Radio 
+                                colorScheme='purple' 
+                                value='Masculino' 
+                                name="gender" 
+                                onChange={(e) => setGenderVal(e.target.value)}>
+                                    Masculino
+                            </Radio>
+                            <Radio 
+                                colorScheme='pink' 
+                                value='Femenino' 
+                                name="gender" 
+                                onChange={(e) => setGenderVal(e.target.value)}>
+                                    Femenino
+                            </Radio>
+                        </HStack>
+                    </RadioGroup>
                     <Box
                         as="button"
                         p={2}

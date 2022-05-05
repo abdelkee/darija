@@ -35,6 +35,7 @@ export const GET_VOCAB_CARDS = gql`
             spName,
             arName,
             plural,
+            gender,
             category {
                 id,
                 slug

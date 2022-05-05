@@ -1,13 +1,11 @@
-import { Box, Center, Circle, HStack, Square, Stack, Text, VStack } from "@chakra-ui/react";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import { BiEdit, BiEditAlt, BiPencil, BiTrash } from "react-icons/bi";
-import { useSelector } from "react-redux";
-import { colors } from "../../utils/theme";
+import { HStack, Text, VStack } from "@chakra-ui/react";
+
 import Actions from "./Actions";
 
 
 export default function WordDetails({card, onOpen}) {
+
+  const genderColor = card.gender === 'Masculino' ? 'purple.600' : 'pink.600'
 
   return (
         <HStack
@@ -20,13 +18,29 @@ export default function WordDetails({card, onOpen}) {
               justify={"space-between"}
               fontWeight='bold'
               rounded='md'
-              border={'1px'}
-              borderBottom={'4px'}
-              borderColor={colors.secondary}
-              letterSpacing={1}> 
-                      <VStack align={'start'}>
-                          <Text rounded={'full'} color={colors.primary} fontSize={'lg'}>{card.arName}</Text>
-                          {card.plural && <Text rounded={'full'} color={colors.secondary} fontSize={'lg'}>{card.plural}</Text>}
+              shadow={'xs'}
+              borderBottom={'2px'}
+              borderLeft={card.gender === 'Masculino' ? '2px' : 0 }
+              borderRight={card.gender === 'Masculino' ? 0 : '2px' }
+              borderColor={genderColor}
+              letterSpacing={1}
+              overflow={'hidden'}>
+                      <VStack align={'start'} >
+                          <Text 
+                            rounded={'full'}
+                            color={genderColor}
+                            fontSize={'md'}
+                            letterSpacing={2}>
+                              {card.arName}
+                          </Text>
+                          {card.plural && 
+                          <Text 
+                            rounded={'full'} 
+                            color={genderColor} 
+                            fontSize={'md'}
+                            letterSpacing={2}>
+                              {card.plural}
+                          </Text>}
                       </VStack>
                       <Text color={'gray.500'} fontSize={'xs'}>{card.spName}</Text>
                       <Actions onOpen={onOpen} trigger={card}/>  

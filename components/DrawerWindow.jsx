@@ -1,7 +1,5 @@
-import { Box, Button, Center, Drawer, DrawerBody, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Image, useDisclosure, VStack } from "@chakra-ui/react"
-import Link from "next/link"
+import { Box, Drawer, DrawerBody, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Image, useDisclosure, VStack } from "@chakra-ui/react"
 import { HiMenuAlt2 } from "react-icons/hi"
-import { useSelector } from "react-redux"
 import MenuItem from "./MenuItem"
 
 export default function DrawerWindow() {

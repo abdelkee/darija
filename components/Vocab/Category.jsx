@@ -11,7 +11,8 @@ export default function Category({category, onOpen}) {
           <Circle
             bgGradient={`linear(to-b, purple.300, pink.400)`}
             size={"32"}>
-              <Circle 
+              <Circle
+                as={'button'}
                 size={'28'} 
                 bgColor={'white'}
                 overflow={'hidden'}>
