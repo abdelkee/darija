@@ -1,7 +1,11 @@
-import React from "react";
+import CategoryList from "./components/CategoryList";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <main className="px-12 py-20">
+      <CategoryList />
+    </main>
+  );
 }
 
 export default HomePage;
