@@ -1,9 +1,9 @@
 export const data = [
     {
-        "title": "Basicos",
+        "title": "Pronombres",
         "img": "/img/golden_egg.png",
         "color": "#FBBF24",
-        "path": "/basicos"
+        "path": "/pronombres"
     },
     {
         "title": "Frases",

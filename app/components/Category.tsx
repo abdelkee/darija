@@ -9,7 +9,12 @@ type Props = {
 
 function Category({ category }: Props) {
   return (
-    <Link href={category.path} className="flex flex-col items-center space-y-2">
+    <Link
+      href={category.path}
+      className={`flex flex-col items-center space-y-2 ${
+        category.title === "Pronombres" && "single"
+      }`}
+    >
       <div
         className="w-[96px] h-[96px] bg-transparent border-[6px] grid place-items-center relative rounded-full"
         style={{ borderColor: category.color }}
