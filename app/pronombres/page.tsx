@@ -1,5 +1,13 @@
 import PronombreCard from "./PronombreCard";
-import { tu_data, yo_data } from "../../utils/pronombres_tipos";
+import {
+  ella_data,
+  ellos_data,
+  el_data,
+  nosotros_data,
+  tu_data,
+  ustedes_data,
+  yo_data,
+} from "../../utils/pronombres_data";
 
 function PronombresPage() {
   return (
@@ -20,11 +28,11 @@ function PronombresPage() {
           />
           <PronombreCard
             pronombre={{ es: "El", ar: "Huua" }}
-            tipos_data={yo_data}
+            tipos_data={el_data}
           />
           <PronombreCard
             pronombre={{ es: "Ella", ar: "Hiyya" }}
-            tipos_data={yo_data}
+            tipos_data={ella_data}
           />
         </div>
       </section>
@@ -36,15 +44,15 @@ function PronombresPage() {
         <div className="grid w-full grid-cols-1 gap-y-4">
           <PronombreCard
             pronombre={{ es: "Nosotros/as", ar: "7na" }}
-            tipos_data={yo_data}
+            tipos_data={nosotros_data}
           />
           <PronombreCard
             pronombre={{ es: "Ustedes", ar: "Ntuuma" }}
-            tipos_data={yo_data}
+            tipos_data={ustedes_data}
           />
           <PronombreCard
             pronombre={{ es: "Ellos/as", ar: "Huuma" }}
-            tipos_data={yo_data}
+            tipos_data={ellos_data}
           />
         </div>
       </section>

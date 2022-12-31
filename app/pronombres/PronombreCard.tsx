@@ -50,9 +50,9 @@ function PronombreCard({ pronombre, tipos_data }: Props) {
 
       {/* ------- //* MORE SECTION ----------- */}
       {isOpen && (
-        <section className="mt-1 bg-green-50 py-6 px-4 border border-green-200 grid rounded-sm grid-cols-1 gap-y-8">
+        <section className="grid grid-cols-1 px-4 py-6 mt-1 border border-green-200 rounded-sm bg-green-50 gap-y-8">
           {tipos_data.map((tipo) => (
-            <Pronombre key={tipo.es_title} tipo={tipo} />
+            <Pronombre key={tipo.es_title + tipo.ar_title} tipo={tipo} />
           ))}
         </section>
       )}
