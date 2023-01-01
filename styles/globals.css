@@ -4,6 +4,11 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 button:active, a:active {

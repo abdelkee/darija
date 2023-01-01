@@ -11,8 +11,8 @@ type Props = {
 function Pronombre({ tipo }: Props) {
   const [isTooltipShow, setIsTooltipShow] = useState<boolean>(false);
   return (
-    <div className="flex flex-col items-center border border-gray-300 rounded px-4 py-6 relative bg-white">
-      <p
+    <div className="relative flex flex-col items-center px-4 py-6 bg-white border border-gray-300 rounded">
+      {/* <p
         className={`absolute tracking-wider -top-5 left-1/2 border ${
           tipo.gender === "M"
             ? "bg-blue-200 border-blue-400"
@@ -20,10 +20,10 @@ function Pronombre({ tipo }: Props) {
         } -translate-x-1/2 text-lg font-semibold bg-white shadow rounded py-1 px-2`}
       >
         {tipo.es_title} - {tipo.ar_title}
-      </p>
+      </p> */}
       <div
         title="Examples section"
-        className="flex w-full items-center justify-between "
+        className="flex items-center justify-between w-full "
       >
         <div className="flex items-center space-x-0.5">
           {tipo.es_example.split(" ").map((w) => (
@@ -54,7 +54,7 @@ function Pronombre({ tipo }: Props) {
         <>
           {!isTooltipShow ? (
             <button
-              className="absolute bottom-2 left-1/2 -translate-x-1/2 rounde-full w-6 h-6 grid place-items-center bg-gray-500 rounded-full text-white"
+              className="absolute grid w-6 h-6 text-white -translate-x-1/2 bg-gray-500 rounded-full bottom-2 left-1/2 rounde-full place-items-center"
               onClick={() => setIsTooltipShow(true)}
             >
               ?
@@ -62,7 +62,7 @@ function Pronombre({ tipo }: Props) {
           ) : (
             <div
               title="tooltip body"
-              className=" w-3/4 shadow-xl p-6 rounded relative border-gray-200 bg-gray-500 text-white"
+              className="absolute z-30 w-3/4 p-6 text-white bg-gray-500 border-gray-200 rounded shadow-xl "
             >
               {tipo.tooltip}
               <button
