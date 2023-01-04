@@ -1,7 +1,6 @@
 "use client";
 
 import { useAppContext } from "../../context/ContextProvider";
-import { FoodDataType } from "../../types";
 import FoodCard from "./FoodCard";
 import { useState } from "react";
 
@@ -16,7 +15,7 @@ function FoodDataList() {
         type="search"
         placeholder="Buscar en español..."
         onChange={(e) => setVal(e.target.value)}
-        className="mb-4 w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-blue-300"
+        className="w-full p-3 mb-4 border border-gray-200 rounded focus:outline-none focus:border-blue-300"
       />
       <div className="grid grid-cols-2 gap-4">
         {filteredData?.map((each) => (

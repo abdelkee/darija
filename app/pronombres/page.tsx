@@ -1,15 +1,15 @@
+import { use } from "react";
+import { PronombreDataObjType } from "../../types";
 import PronombreCard from "./PronombreCard";
-import {
-  ella_data,
-  ellos_data,
-  el_data,
-  nosotros_data,
-  tu_data,
-  ustedes_data,
-  yo_data,
-} from "../../utils/pronombres_data";
+
+const fetcher = async () => {
+  const response = await fetch("http://localhost:3000/api/pronombres");
+  const { data } = await response.json();
+  return data as PronombreDataObjType;
+};
 
 function PronombresPage() {
+  const data = use(fetcher());
   return (
     <main className="py-24 space-y-8">
       <section
@@ -18,21 +18,15 @@ function PronombresPage() {
       >
         <p className="text-2xl font-semibold tracking-wider">Singular</p>
         <div className="grid w-full grid-cols-1 gap-y-4">
-          <PronombreCard
-            pronombre={{ es: "Yo", ar: "Ana" }}
-            tipos_data={yo_data}
-          />
+          <PronombreCard pronombre={{ es: "Yo", ar: "Ana" }} data={data.yo} />
           <PronombreCard
             pronombre={{ es: "Tu", ar: "Nta / Nti" }}
-            tipos_data={tu_data}
+            data={data.tu}
           />
-          <PronombreCard
-            pronombre={{ es: "El", ar: "Huua" }}
-            tipos_data={el_data}
-          />
+          <PronombreCard pronombre={{ es: "El", ar: "Huua" }} data={data.el} />
           <PronombreCard
             pronombre={{ es: "Ella", ar: "Hiyya" }}
-            tipos_data={ella_data}
+            data={data.ella}
           />
         </div>
       </section>
@@ -44,15 +38,15 @@ function PronombresPage() {
         <div className="grid w-full grid-cols-1 gap-y-4">
           <PronombreCard
             pronombre={{ es: "Nosotros/as", ar: "7na" }}
-            tipos_data={nosotros_data}
+            data={data.nosotros}
           />
           <PronombreCard
             pronombre={{ es: "Ustedes", ar: "Ntuuma" }}
-            tipos_data={ustedes_data}
+            data={data.ustedes}
           />
           <PronombreCard
             pronombre={{ es: "Ellos/as", ar: "Huuma" }}
-            tipos_data={ellos_data}
+            data={data.ellos}
           />
         </div>
       </section>

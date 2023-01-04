@@ -2,7 +2,14 @@
 
 import { PronombreType } from "../../types";
 import { useState } from "react";
-import { MdClose } from "react-icons/md";
+import {
+  MdArrowDownward,
+  MdArrowUpward,
+  MdClose,
+  MdKeyboardArrowDown,
+  MdKeyboardArrowUp,
+  MdOutlineArrowUpward,
+} from "react-icons/md";
 
 type Props = {
   tipo: PronombreType;
@@ -10,18 +17,10 @@ type Props = {
 
 function Pronombre({ tipo }: Props) {
   const [isTooltipShow, setIsTooltipShow] = useState<boolean>(false);
+  const [isMoreExamplesOpen, setIsMoreExamplesOpen] = useState<boolean>(false);
   return (
     <div className="relative flex flex-col items-center px-4 py-6 bg-white border border-gray-300 rounded">
-      {/* <p
-        className={`absolute tracking-wider -top-5 left-1/2 border ${
-          tipo.gender === "M"
-            ? "bg-blue-200 border-blue-400"
-            : "bg-pink-200 border-pink-400"
-        } -translate-x-1/2 text-lg font-semibold bg-white shadow rounded py-1 px-2`}
-      >
-        {tipo.es_title} - {tipo.ar_title}
-      </p> */}
-      <div
+      <section
         title="Examples section"
         className="flex items-center justify-between w-full "
       >
@@ -49,12 +48,14 @@ function Pronombre({ tipo }: Props) {
             </p>
           ))}
         </div>
-      </div>
+      </section>
+
+      {/* //* ---- TOOLTIP TOGGLE ---- */}
       {tipo.tooltip && (
         <>
           {!isTooltipShow ? (
             <button
-              className="absolute grid w-6 h-6 text-white -translate-x-1/2 bg-gray-500 rounded-full bottom-2 left-1/2 rounde-full place-items-center"
+              className="absolute left-0 grid w-4 h-4 text-xs text-white -translate-x-1/2 rounded-full -top-1 bg-gray-500/70 rounde-full place-items-center"
               onClick={() => setIsTooltipShow(true)}
             >
               ?
@@ -75,6 +76,34 @@ function Pronombre({ tipo }: Props) {
           )}
         </>
       )}
+
+      {/* //* ---- MORE EXAMPLES ---- */}
+      <section className="relative w-full">
+        <button
+          className="absolute top-0 text-green-300 -translate-x-1/2 left-1/2 "
+          onClick={() => setIsMoreExamplesOpen((curr) => !curr)}
+        >
+          {isMoreExamplesOpen ? (
+            <MdKeyboardArrowUp size={"20px"} />
+          ) : (
+            <MdKeyboardArrowDown size={"20px"} />
+          )}
+        </button>
+
+        {isMoreExamplesOpen && (
+          <div
+            title="MORE EXAMPLES BODY"
+            className="flex flex-col pt-6 space-y-2"
+          >
+            {tipo.examples.map((example) => (
+              <div className="p-2 text-sm text-gray-500 border border-gray-200 rounded">
+                <p className="text-left">{example.es}</p>
+                <p className="text-right">{example.ar}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
     </div>
   );
 }
