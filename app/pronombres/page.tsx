@@ -3,7 +3,8 @@ import { PronombreDataObjType } from "../../types";
 import PronombreCard from "./PronombreCard";
 
 const fetcher = async () => {
-  const response = await fetch("http://localhost:3000/api/pronombres");
+  const response = await fetch("https://darija.vercel.app/api/pronombres");
+  // const response = await fetch("http://localhost:3000/api/pronombres");
   const { data } = await response.json();
   return data as PronombreDataObjType;
 };
