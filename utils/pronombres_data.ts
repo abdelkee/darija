@@ -13,11 +13,11 @@ const data = {
                 },
                 {
                     es: 'No! no es mio',
-                    ar: 'La! la machi diali'
+                    ar: 'La! la mashi diali'
                 },
                 {
                     es: 'El mio esta en la mochila',
-                    ar: 'Diali kayn f chkara'
+                    ar: 'Diali kayn f shkara'
                 }
             ]
         },
@@ -34,7 +34,7 @@ const data = {
                 },
                 {
                     es: 'No! no es mia',
-                    ar: 'La! la machi dialti'
+                    ar: 'La! la mashi dialti'
                 },
                 {
                     es: 'La mia esta en el cuarto',
@@ -55,7 +55,7 @@ const data = {
                 },
                 {
                     es: 'No! no son mios',
-                    ar: 'La! la machi diawli'
+                    ar: 'La! la mashi diawli'
                 },
                 {
                     es: 'Los mios estan en el closet',
@@ -71,8 +71,16 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Estas medias son mias',
+                    ar: 'Had t9asher diawli'
+                },
+                {
+                    es: 'No! no son mias',
+                    ar: 'La! la mashi diawli'
+                },
+                {
+                    es: 'Las mias estan en el closet',
+                    ar: 'Diawli kaynin f el mariu'
                 }
             ]
         },
@@ -84,8 +92,12 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Mi telefono es nuevo',
+                    ar: 'Telefoni jdid'
+                },
+                {
+                    es: 'Este es mi libro',
+                    ar: 'Hada ktabi'
                 }
             ],
             tooltip: "Se aumenta la 'i' al final"
@@ -98,8 +110,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Me duele mi rodilla',
+                    ar: 'Kaderni rkubti'
                 }
             ],
             tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'ti' al final se elimina la 'a' "
@@ -112,8 +124,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'cepillo mis dientes en la mañana',
+                    ar: 'Kan7uk snani f sba7'
                 }
             ],
         },
@@ -121,15 +133,15 @@ const data = {
             es_title: "Mis",
             ar_title: "i",
             es_example: "Mis camisas",
-            ar_example: "9amijat i",
+            ar_example: "9wamej i",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Viste mis gafas ?',
+                    ar: 'Shefti ndadri ?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija"
         },
 
     ],
@@ -143,8 +155,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Este libro es tuyo',
+                    ar: 'Had lktab dialek'
                 }
             ]
         },
@@ -156,8 +168,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La mochila negra no es tuya',
+                    ar: 'Shkara lka7la machi dialtek'
                 }
             ]
         },
@@ -165,12 +177,12 @@ const data = {
             es_title: "Tuyos",
             ar_title: "Diawelek",
             es_example: "Libros tuyos",
-            ar_example: "Ktuba diawelek",
+            ar_example: "Ktuba diawlek",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Esos perros son tuyos ?',
+                    ar: 'Haduk leklab diawlek ?'
                 }
             ]
         },
@@ -178,12 +190,12 @@ const data = {
             es_title: "Tuyas",
             ar_title: "Diawelek",
             es_example: "Camisas tuyas",
-            ar_example: "9amijat diawelek",
+            ar_example: "9wamej diawlek",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Estas gatitas no son tuyas',
+                    ar: 'Had lmchichat machi diawlek'
                 }
             ]
         },
@@ -195,8 +207,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Prestame tu libro',
+                    ar: 'Selfni ktabk'
                 }
             ],
             tooltip: "Se aumenta la 'k' al final"
@@ -209,11 +221,11 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Tu camisa esta sucia',
+                    ar: '9amijtk muskha'
                 }
             ],
-            tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tk' al final se elimina la 'a' "
+            tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tk' se elimina la 'a' "
         },
         {
             es_title: "Tus",
@@ -223,8 +235,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Tus libros estan en la mesa',
+                    ar: 'Ktubk kaynin f tabla'
                 }
             ],
         },
@@ -236,11 +248,11 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'donde estan tus almohadas?',
+                    ar: 'Fin kaynin mkhadk?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "Mkhad es plural de mkhada"
         },
     ],
 
