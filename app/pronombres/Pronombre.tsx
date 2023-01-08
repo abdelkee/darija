@@ -7,7 +7,7 @@ import {
   MdKeyboardArrowUp,
 } from "react-icons/md";
 import ctl from "@netlify/classnames-template-literals";
-import { PronombreType } from "../../../types";
+import { PronombreType } from "../../types";
 
 type Props = {
   tipo: PronombreType;
