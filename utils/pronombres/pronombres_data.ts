@@ -9,7 +9,7 @@ const data = {
             examples: [
                 {
                     es: 'Este telefono es mio',
-                    ar: 'Had telefon diali'
+                    ar: 'Had tilifon diali'
                 },
                 {
                     es: 'No! no es mio',
@@ -17,7 +17,7 @@ const data = {
                 },
                 {
                     es: 'El mio esta en la mochila',
-                    ar: 'Diali kayn f shkara'
+                    ar: 'Diali kayn fe shkara'
                 }
             ]
         },
@@ -30,7 +30,7 @@ const data = {
             examples: [
                 {
                     es: 'Esta escoba es mia',
-                    ar: 'Had chtaba dialti'
+                    ar: 'Had shtaba dialti'
                 },
                 {
                     es: 'No! no es mia',
@@ -38,20 +38,20 @@ const data = {
                 },
                 {
                     es: 'La mia esta en el cuarto',
-                    ar: 'Dialti kayna fel bit'
+                    ar: 'Dialti kayna fe lbit'
                 }
             ]
         },
         {
             es_title: "Mios",
-            ar_title: "Diaweli",
+            ar_title: "Diawli",
             es_example: "Libros mios",
-            ar_example: "Ktuba diaweli",
+            ar_example: "Ktub diawli",
             gender: 'M',
             examples: [
                 {
                     es: 'Estos libros son mios',
-                    ar: 'Had lektuba diawli'
+                    ar: 'Had lektub diawli'
                 },
                 {
                     es: 'No! no son mios',
@@ -59,15 +59,15 @@ const data = {
                 },
                 {
                     es: 'Los mios estan en el closet',
-                    ar: 'Diawli kaynin fel mariu'
+                    ar: 'Diawli kaynin fe lmariu'
                 }
             ]
         },
         {
             es_title: "Mias",
-            ar_title: "Diaweli",
+            ar_title: "Diawli",
             es_example: "Camisas mias",
-            ar_example: "9amijat diaweli",
+            ar_example: "9wamej diawli",
             gender: 'F',
             examples: [
                 {
@@ -80,9 +80,10 @@ const data = {
                 },
                 {
                     es: 'Las mias estan en el closet',
-                    ar: 'Diawli kaynin f el mariu'
+                    ar: 'Diawli kaynin fe lmariu'
                 }
-            ]
+            ],
+            tooltip: "9wamej es plural de 9amija"
         },
         {
             es_title: "Mi",
@@ -93,7 +94,7 @@ const data = {
             examples: [
                 {
                     es: 'Mi telefono es nuevo',
-                    ar: 'Telefoni jdid'
+                    ar: 'Tilifoni jdid'
                 },
                 {
                     es: 'Este es mi libro',
@@ -114,7 +115,7 @@ const data = {
                     ar: 'Kaderni rkubti'
                 }
             ],
-            tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'ti' al final se elimina la 'a' "
+            tooltip: "La mayoria de las palabras femininas terminan con 'a' al final, y cuando se aumenta 'ti' se elimina la 'a' "
         },
         {
             es_title: "Mis",
@@ -143,6 +144,23 @@ const data = {
             ],
             tooltip: "9wamej es plural de 9amija"
         },
+        {
+            es_title: "Conmigo",
+            ar_title: "m3aya",
+            es_example: "Ven conmigo !",
+            ar_example: "Aji m3aya !",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Quieres jugar conmigo ?',
+                    ar: 'Bghiti tel3eb m3aya ?'
+                },
+                {
+                    es: 'Jango esta comiendo conmigo',
+                    ar: 'Jango kayakul m3aya'
+                }
+            ],
+        },
 
     ],
 
@@ -169,15 +187,15 @@ const data = {
             examples: [
                 {
                     es: 'La mochila negra no es tuya',
-                    ar: 'Shkara lka7la machi dialtek'
+                    ar: 'Shkara lka7la mashi dialtek'
                 }
             ]
         },
         {
             es_title: "Tuyos",
-            ar_title: "Diawelek",
+            ar_title: "Diawlek",
             es_example: "Libros tuyos",
-            ar_example: "Ktuba diawlek",
+            ar_example: "Ktub diawlek",
             gender: 'M',
             examples: [
                 {
@@ -188,7 +206,7 @@ const data = {
         },
         {
             es_title: "Tuyas",
-            ar_title: "Diawelek",
+            ar_title: "Diawlek",
             es_example: "Camisas tuyas",
             ar_example: "9wamej diawlek",
             gender: 'F',
@@ -197,7 +215,8 @@ const data = {
                     es: 'Estas gatitas no son tuyas',
                     ar: 'Had lmchichat machi diawlek'
                 }
-            ]
+            ],
+            tooltip: "9wamej es plural de 9amija"
         },
         {
             es_title: "Tu",
@@ -225,18 +244,18 @@ const data = {
                     ar: '9amijtk muskha'
                 }
             ],
-            tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tk' se elimina la 'a' "
+            tooltip: "La mayoria de las palabras femininas terminan con 'a' al final, y cuando se aumenta 'ti' se elimina la 'a' "
         },
         {
             es_title: "Tus",
             ar_title: "k",
             es_example: "Tus libros",
             ar_example: "Ktub k",
-            gender: 'F',
+            gender: 'M',
             examples: [
                 {
-                    es: 'Tus libros estan en la mesa',
-                    ar: 'Ktubk kaynin f tabla'
+                    es: 'Tus libros estan sobre la mesa',
+                    ar: 'Ktubk kaynin fu9 tabla'
                 }
             ],
         },
@@ -244,7 +263,7 @@ const data = {
             es_title: "Tus",
             ar_title: "k",
             es_example: "Tus camisas",
-            ar_example: "9amijat k",
+            ar_example: "9wamej k",
             gender: 'F',
             examples: [
                 {
@@ -252,7 +271,24 @@ const data = {
                     ar: 'Fin kaynin mkhadk?'
                 }
             ],
-            tooltip: "Mkhad es plural de mkhada"
+            tooltip: "9wamej es plural de 9amija y Mkhad es plural de mkhada"
+        },
+        {
+            es_title: "Contigo",
+            ar_title: "m3ak",
+            es_example: "Voy contigo ?",
+            ar_example: "Nemshi m3ak ?",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Quiero que se quede contigo',
+                    ar: 'Bghitu ib9a m3ak'
+                },
+                {
+                    es: 'Jango esta contigo ?',
+                    ar: 'Jango kayn m3ak ?'
+                }
+            ],
         },
     ],
 

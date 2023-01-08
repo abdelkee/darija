@@ -1,5 +1,6 @@
 import ContextProvider from "../context/ContextProvider";
 import "../styles/globals.css";
+import AppBar from "./shared/AppBar";
 
 export default function RootLayout({
   children,
@@ -10,7 +11,10 @@ export default function RootLayout({
     <html>
       <head />
       <body className="text-green-900 bg-neutral-50">
-        <ContextProvider>{children}</ContextProvider>
+        <ContextProvider>
+          <AppBar />
+          {children}
+        </ContextProvider>
       </body>
     </html>
   );

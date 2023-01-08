@@ -2,7 +2,7 @@ import Category from "./Category";
 import { data } from "../../utils/sections";
 import { CategoryType } from "../../types";
 
-function CategoryList() {
+export default function CategoryList() {
   return (
     <>
       <section className="grid grid-cols-2 gap-16">
@@ -13,5 +13,3 @@ function CategoryList() {
     </>
   );
 }
-
-export default CategoryList;

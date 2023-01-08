@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import ctl from "@netlify/classnames-template-literals";
 import { CategoryType } from "../../types";
 
 type Props = {
@@ -8,19 +8,51 @@ type Props = {
 };
 
 function Category({ category }: Props) {
+  // ---- STYLES
+  const s = {
+    container: ctl(`
+      flex 
+      flex-col 
+      items-center 
+      space-y-2 
+      ${category.title === "Pronombres" && "single"}
+    `),
+    imageContainer: ctl(`
+      w-[96px] 
+      h-[96px] 
+      bg-transparent 
+      border-[6px] 
+      grid 
+      place-items-center 
+      relative 
+      rounded-full
+    `),
+    imageBg: ctl(`
+      absolute 
+      inset-0 
+      z-10 
+      rounded-full 
+      opacity-40
+    `),
+    image: ctl(`
+      z-20 
+      bg-transparent 
+      border-4 
+      border-white 
+      rounded-full
+    `),
+    title: ctl(`
+      font-semibold 
+      tracking-wider
+    `),
+  };
+
+  // ---- JSX
   return (
-    <Link
-      href={category.path}
-      className={`flex flex-col items-center space-y-2 ${
-        category.title === "Pronombres" && "single"
-      }`}
-    >
-      <div
-        className="w-[96px] h-[96px] bg-transparent border-[6px] grid place-items-center relative rounded-full"
-        style={{ borderColor: category.color }}
-      >
+    <Link href={category.path} className={s.container}>
+      <div className={s.imageContainer} style={{ borderColor: category.color }}>
         <div
-          className="absolute inset-0 z-10 rounded-full opacity-40"
+          className={s.imageBg}
           style={{ backgroundColor: category.color }}
         />
         <Image
@@ -28,10 +60,10 @@ function Category({ category }: Props) {
           src={category.img}
           width={84}
           height={84}
-          className="z-20 bg-transparent border-4 border-white rounded-full"
+          className={s.image}
         />
       </div>
-      <p className="font-semibold tracking-wider">{category.title}</p>
+      <p className={s.title}>{category.title}</p>
     </Link>
   );
 }

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import ctl from "@netlify/classnames-template-literals";
 import { PronombreType } from "../../types";
 import Pronombre from "./Pronombre";
 
@@ -14,32 +15,89 @@ type Props = {
   data: PronombreType[];
 };
 
-function PronombreCard({ pronombre, data }: Props) {
+export default function PronombreCard({ pronombre, data }: Props) {
+  // ---- HOOKS
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  console.log(data);
+
+  // ---- STYLES
+  const s = {
+    faceSection: ctl(`
+      relative 
+      flex 
+      items-center 
+      justify-between 
+      px-4 
+      py-3 
+      overflow-hidden 
+      rounded-lg 
+      shadow 
+      bg-gradient-to-r 
+      from-green-700 
+      to-green-400
+    `),
+    image: ctl(`
+      absolute 
+      z-10 
+      -translate-y-1/2 
+      opacity-20 
+      grayscale 
+      top-1/2 
+      left-1/2
+    `),
+    infoContainer: ctl(`
+      z-20 
+      flex 
+      items-center 
+      space-x-4
+    `),
+    esTitle: ctl(`
+      text-lg 
+      font-semibold 
+      text-green-200
+    `),
+    arTitle: ctl(`
+      font-semibold 
+      tracking-wider 
+      text-gray-200
+    `),
+    toggleButton: ctl(`
+      z-20 
+      p-1 
+      text-green-50
+    `),
+    moreSection: ctl(`
+      grid 
+      grid-cols-1 
+      px-4 
+      py-6 
+      mt-1 
+      border 
+      border-green-200 
+      rounded-sm 
+      bg-green-50 
+      gap-y-4
+    `),
+  };
+
+  // ---- JSX
   return (
-    <div>
-      <section
-        className={`relative flex items-center justify-between px-4 py-3 overflow-hidden rounded-lg shadow bg-gradient-to-r from-green-700 to-green-400`}
-      >
+    <>
+      <section title="FACE SECTION" className={s.faceSection}>
         <Image
           alt="bg"
           src={"/img/bg-morocco-flag.png"}
           width={170}
           height={0}
-          className="absolute z-10 -translate-y-1/2 opacity-20 grayscale top-1/2 left-1/2"
+          className={s.image}
         />
-        <div className="z-20 flex items-center space-x-4">
-          <p className="text-lg font-semibold text-green-200">
-            {pronombre.es} :
-          </p>
-          <p className="font-semibold tracking-wider text-gray-200">
-            {pronombre.ar}
-          </p>
+        <div className={s.infoContainer}>
+          <p className={s.esTitle}>{pronombre.es} :</p>
+          <p className={s.arTitle}>{pronombre.ar}</p>
         </div>
         <button
+          title="TOGGLE BUTTON"
           onClick={() => setIsOpen(!isOpen)}
-          className="z-20 p-1 text-green-50"
+          className={s.toggleButton}
         >
           {isOpen ? (
             <MdKeyboardArrowUp size="24px" />
@@ -49,16 +107,16 @@ function PronombreCard({ pronombre, data }: Props) {
         </button>
       </section>
 
-      {/* ------- //* MORE SECTION ----------- */}
       {isOpen && (
-        <section className="grid grid-cols-1 px-4 py-6 mt-1 border border-green-200 rounded-sm bg-green-50 gap-y-4">
+        <section title="MORE SECTION" className={s.moreSection}>
           {data?.map((tipo) => (
-            <Pronombre key={tipo.es_title + tipo.ar_title} tipo={tipo} />
+            <Pronombre
+              key={tipo.es_title + tipo.ar_title + Math.random().toString()}
+              tipo={tipo}
+            />
           ))}
         </section>
       )}
-    </div>
+    </>
   );
 }
-
-export default PronombreCard;

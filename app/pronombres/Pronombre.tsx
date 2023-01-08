@@ -1,30 +1,108 @@
 "use client";
 
-import { PronombreType } from "../../types";
 import { useState } from "react";
 import {
-  MdArrowDownward,
-  MdArrowUpward,
   MdClose,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
-  MdOutlineArrowUpward,
 } from "react-icons/md";
+import ctl from "@netlify/classnames-template-literals";
+import { PronombreType } from "../../../types";
 
 type Props = {
   tipo: PronombreType;
 };
 
-function Pronombre({ tipo }: Props) {
+export default function Pronombre({ tipo }: Props) {
+  // ---- HOOKS
   const [isTooltipShow, setIsTooltipShow] = useState<boolean>(false);
   const [isMoreExamplesOpen, setIsMoreExamplesOpen] = useState<boolean>(false);
+
+  // ---- STYLES
+  const s = {
+    wrapper: ctl(`
+      relative 
+      flex 
+      flex-col 
+      items-center 
+      px-4 
+      py-6 
+      bg-white 
+      border 
+      border-gray-300 
+      rounded
+    `),
+    ruleSection: ctl(`
+      flex 
+      items-center 
+      justify-between 
+      w-full 
+    `),
+    infoContainer: ctl(`
+      flex 
+      items-center 
+      space-x-0.5
+    `),
+    tooltipButton: ctl(`
+      absolute 
+      left-0 
+      grid 
+      w-4 
+      h-4 
+      text-xs 
+      text-white 
+      -translate-x-1/2 
+      rounded-full 
+      -top-1 
+      bg-gray-500/70 
+      rounde-full 
+      place-items-center
+
+    `),
+    tooltipContainer: ctl(`
+      absolute 
+      z-30 
+      w-3/4 
+      p-6 
+      text-white 
+      bg-gray-500 
+      border-gray-200 
+      rounded 
+      shadow-xl 
+    `),
+    closeTooltipBtn: ctl(`
+      absolute 
+      top-1 
+      right-1
+    `),
+    showExamplesBtn: ctl(`
+      absolute 
+      top-0 
+      text-green-300 
+      -translate-x-1/2 
+      left-1/2 
+    `),
+    examplesContainer: ctl(`
+      flex 
+      flex-col 
+      pt-6 
+      space-y-2
+    `),
+    exampleCard: ctl(`
+      p-2 
+      text-sm 
+      text-gray-500 
+      border 
+      border-gray-200 
+      rounded
+    `),
+  };
+
+  // ---- JSX
   return (
-    <div className="relative flex flex-col items-center px-4 py-6 bg-white border border-gray-300 rounded">
-      <section
-        title="Examples section"
-        className="flex items-center justify-between w-full "
-      >
-        <div className="flex items-center space-x-0.5">
+    <div className={s.wrapper}>
+      <section title="RULE SECTION" className={s.ruleSection}>
+        <div className={s.infoContainer}>
           {tipo.es_example.split(" ").map((w) => (
             <p
               className={`${
@@ -36,7 +114,7 @@ function Pronombre({ tipo }: Props) {
             </p>
           ))}
         </div>
-        <div className="flex items-center space-x-0.5">
+        <div className={s.infoContainer}>
           {tipo.ar_example.split(" ").map((w) => (
             <p
               className={`${
@@ -55,19 +133,17 @@ function Pronombre({ tipo }: Props) {
         <>
           {!isTooltipShow ? (
             <button
-              className="absolute left-0 grid w-4 h-4 text-xs text-white -translate-x-1/2 rounded-full -top-1 bg-gray-500/70 rounde-full place-items-center"
+              title="TOOLTIP BUTTON"
+              className={s.tooltipButton}
               onClick={() => setIsTooltipShow(true)}
             >
               ?
             </button>
           ) : (
-            <div
-              title="tooltip body"
-              className="absolute z-30 w-3/4 p-6 text-white bg-gray-500 border-gray-200 rounded shadow-xl "
-            >
+            <div title="TOOLTIP BODY" className={s.tooltipContainer}>
               {tipo.tooltip}
               <button
-                className="absolute top-1 right-1"
+                className={s.closeTooltipBtn}
                 onClick={() => setIsTooltipShow(false)}
               >
                 <MdClose size={"24px"} />
@@ -77,10 +153,10 @@ function Pronombre({ tipo }: Props) {
         </>
       )}
 
-      {/* //* ---- MORE EXAMPLES ---- */}
-      <section className="relative w-full">
+      <section title="EXAMPLES SECTION" className="relative w-full">
         <button
-          className="absolute top-0 text-green-300 -translate-x-1/2 left-1/2 "
+          title="SHOW EXAMPLES BTN"
+          className={s.showExamplesBtn}
           onClick={() => setIsMoreExamplesOpen((curr) => !curr)}
         >
           {isMoreExamplesOpen ? (
@@ -91,12 +167,9 @@ function Pronombre({ tipo }: Props) {
         </button>
 
         {isMoreExamplesOpen && (
-          <div
-            title="MORE EXAMPLES BODY"
-            className="flex flex-col pt-6 space-y-2"
-          >
+          <div title="MORE EXAMPLES BODY" className={s.examplesContainer}>
             {tipo.examples.map((example) => (
-              <div className="p-2 text-sm text-gray-500 border border-gray-200 rounded">
+              <div className={s.exampleCard}>
                 <p className="text-left">{example.es}</p>
                 <p className="text-right">{example.ar}</p>
               </div>
@@ -107,5 +180,3 @@ function Pronombre({ tipo }: Props) {
     </div>
   );
 }
-
-export default Pronombre;

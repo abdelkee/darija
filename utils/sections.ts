@@ -24,10 +24,10 @@ export const data = [
         "path": "/familia"
     },
     {
-        "title": "Alimento",
+        "title": "Alimentos",
         "img": "/img/tea.png",
         "color": "#22C55E",
-        "path": "/alimento"
+        "path": "/alimentos"
     },
     {
         "title": "Preguntas",
