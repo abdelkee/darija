@@ -3,14 +3,18 @@
 import { useEffect } from "react";
 import ctl from "@netlify/classnames-template-literals";
 import { useAppContext } from "../../context/ContextProvider";
-import { alimentos_data } from "../../utils/alimentos_data";
-import FoodCategory from "./FoodCategory";
+import CategoryCard from "./CategoryCard";
+import { CategoryType } from "../../types";
 
-function Header() {
+type Props = {
+  sectionData: CategoryType[];
+};
+
+export default function CategoryList({ sectionData }: Props) {
   // ---- HOOKS
   const dispatch = useAppContext().dispatch;
   useEffect(() => {
-    dispatch({ type: "setFoodData", payload: alimentos_data[0] });
+    dispatch({ type: "setData", payload: sectionData[0] });
   }, []);
 
   // STYLES
@@ -32,12 +36,10 @@ function Header() {
   return (
     <header className={s.header}>
       <div className={s.categoriesContainer}>
-        {alimentos_data.map((alim) => (
-          <FoodCategory key={alim.title} data={alim} />
+        {sectionData?.map((each) => (
+          <CategoryCard key={each.title} data={each} />
         ))}
       </div>
     </header>
   );
 }
-
-export default Header;

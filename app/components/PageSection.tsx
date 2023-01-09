@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import ctl from "@netlify/classnames-template-literals";
-import { CategoryType } from "../../types";
+import { PageSectionType } from "../../types";
 
 type Props = {
-  category: CategoryType;
+  category: PageSectionType;
 };
 
-function Category({ category }: Props) {
+export default function PageSection({ category }: Props) {
   // ---- STYLES
   const s = {
     container: ctl(`
@@ -67,5 +67,3 @@ function Category({ category }: Props) {
     </Link>
   );
 }
-
-export default Category;

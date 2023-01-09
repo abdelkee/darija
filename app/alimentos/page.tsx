@@ -1,11 +1,12 @@
-import FoodDataList from "./FoodDataList";
-import Header from "./Header";
+import { alimentos_data } from "../../utils/alimentos_data";
+import CategoryList from "../shared/CategoryList";
+import ItemsList from "../shared/ItemsList";
 
-export default function AlimentoPage() {
+export default function AlimentosPage() {
   return (
     <>
-      <Header />
-      <FoodDataList />
+      <CategoryList sectionData={alimentos_data} />
+      <ItemsList />
     </>
   );
 }

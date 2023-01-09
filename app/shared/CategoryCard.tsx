@@ -3,20 +3,20 @@
 import Image from "next/image";
 import ctl from "@netlify/classnames-template-literals";
 import { useAppContext } from "../../context/ContextProvider";
-import { FoodType } from "../../types";
+import { CategoryType } from "../../types";
 
 interface Props {
-  data: FoodType;
+  data: CategoryType;
 }
 
-export default function FoodCategory({ data }: Props) {
+export default function CategoryCard({ data }: Props) {
   // ---- HOOKS
   const { state, dispatch } = useAppContext();
 
   // ---- FUNCTIONS
-  const active = data.title === state.foodData?.title;
+  const active = data.title === state.data?.title;
   const setData = () => {
-    dispatch({ type: "setFoodData", payload: data });
+    dispatch({ type: "setData", payload: data });
   };
 
   // ---- STYLES

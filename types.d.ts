@@ -1,4 +1,4 @@
-export interface CategoryType {
+export interface PageSectionType {
     title: string
     img: string
     color: string
@@ -20,15 +20,15 @@ export interface PronombreType {
 
 export type PronombreDataObjType = Record<"yo" | "tu" | "el" | "ella" | "nosotros" | "ustedes" | "ellos", PronombreType[]>
 
-export interface FoodDataType {
+export interface ItemType {
     es_title: string
     ar_title: string
     plural: string
     image_url: string
 }
 
-export interface FoodType {
+export interface CategoryType {
     title: string
     image_url: string
-    data: FoodDataType[]
+    data: ItemType[]
 }

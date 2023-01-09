@@ -1,17 +1,17 @@
 "use client";
 
 import { useAppContext } from "../../context/ContextProvider";
-import FoodCard from "./FoodCard";
 import { useState } from "react";
 import ctl from "@netlify/classnames-template-literals";
+import ItemCard from "./ItemCard";
 
-export default function FoodDataList() {
+export default function ItemsList() {
   // ---- HOOKS
-  const { foodData } = useAppContext().state;
+  const { data } = useAppContext().state;
   const [val, setVal] = useState<string>("");
 
   // ---- FUNCTIONS
-  const filteredData = foodData?.data.filter((f) => f.es_title.includes(val));
+  const filteredData = data?.data.filter((f) => f.es_title.includes(val));
 
   // ---- STYLES
   const s = {
@@ -43,7 +43,7 @@ export default function FoodDataList() {
       />
       <div className={s.cardsContainer}>
         {filteredData?.map((each) => (
-          <FoodCard key={each.es_title} alimento={each} />
+          <ItemCard key={each.es_title} alimento={each} />
         ))}
       </div>
     </main>

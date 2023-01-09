@@ -109,16 +109,50 @@
                     "question": "estas son mias",
                     "options": [
                         {
-                            "answer": "hadu diawlk",
+                            "answer": "hadu dialti",
+                            "correct": false
+                        },
+                        {
+                            "answer": "hadu diali",
                             "correct": false
                         },
                         {
                             "answer": "hadu diawli",
                             "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "mis gafas son nuevas",
+                    "options": [
+                        {
+                            "answer": "ndaderi jdad",
+                            "correct": true
                         },
                         {
-                            "answer": "had diawli",
+                            "answer": "ndader jdad",
                             "correct": false
+                        },
+                        {
+                            "answer": "ndader diali jdad",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "jango esta conmigo",
+                    "options": [
+                        {
+                            "answer": "jango kayn hnaya",
+                            "correct": false
+                        },
+                        {
+                            "answer": "jango kayn m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "jango kayn m3aya",
+                            "correct": true
                         }
                     ]
                 }

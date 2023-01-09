@@ -1,7 +1,12 @@
-import React from "react";
+import CategoryList from "../shared/CategoryList";
+import { animales_data } from "../../utils/animales_data";
+import ItemsList from "../shared/ItemsList";
 
-function AnimalesPage() {
-  return <div>AnimalesPage</div>;
+export default function AnimalesPage() {
+  return (
+    <>
+      <CategoryList sectionData={animales_data} />
+      <ItemsList />
+    </>
+  );
 }
-
-export default AnimalesPage;

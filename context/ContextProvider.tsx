@@ -1,16 +1,16 @@
 "use client";
 
 import { createContext, useContext, useReducer } from "react";
-import { FoodType } from "../types";
+import { CategoryType } from "../types";
 
 type StateType = {
-  foodData: FoodType | null;
+  data: CategoryType | null;
 };
 
-type ActionType = { type: "setFoodData"; payload: FoodType };
+type ActionType = { type: "setData"; payload: CategoryType };
 
 const initialState: StateType = {
-  foodData: null,
+  data: null,
 };
 
 type ContextType = {
@@ -25,10 +25,10 @@ const AppContext = createContext<ContextType>({
 
 const appReducer = (state: StateType, action: ActionType) => {
   switch (action.type) {
-    case "setFoodData":
+    case "setData":
       return {
         ...state,
-        foodData: action.payload,
+        data: action.payload,
       };
     default:
       return state;

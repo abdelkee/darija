@@ -1,7 +1,7 @@
 "use client";
 
 import ctl from "@netlify/classnames-template-literals";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MdClose } from "react-icons/md";
 import data from "../../utils/pronombres/test_data.json";
 

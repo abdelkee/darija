@@ -1,12 +1,12 @@
 import Image from "next/image";
 import ctl from "@netlify/classnames-template-literals";
-import { FoodDataType } from "../../types";
+import { ItemType } from "../../types";
 
 interface Props {
-  alimento: FoodDataType;
+  alimento: ItemType;
 }
 
-function FoodCard({ alimento }: Props) {
+export default function ItemCard({ alimento }: Props) {
   // ---- STYLES
   const s = {
     wrapper: ctl(`
@@ -55,5 +55,3 @@ function FoodCard({ alimento }: Props) {
     </div>
   );
 }
-
-export default FoodCard;
