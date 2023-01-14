@@ -83,7 +83,7 @@ const data = {
                     ar: 'Diawli kaynin fe lmariu'
                 }
             ],
-            tooltip: "9wamej es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
         {
             es_title: "Mi",
@@ -142,7 +142,7 @@ const data = {
                     ar: 'Shefti ndadri ?'
                 }
             ],
-            tooltip: "9wamej es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
         {
             es_title: "Conmigo",
@@ -216,7 +216,7 @@ const data = {
                     ar: 'Had lmchichat machi diawlek'
                 }
             ],
-            tooltip: "9wamej es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
         {
             es_title: "Tu",
@@ -271,7 +271,7 @@ const data = {
                     ar: 'Fin kaynin mkhadk?'
                 }
             ],
-            tooltip: "9wamej es plural de 9amija y Mkhad es plural de mkhada"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e y Mkhad es plural de mkhada"
         },
         {
             es_title: "Contigo",
@@ -301,10 +301,11 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Este libro es de el',
+                    ar: 'Had lktab dialu'
                 }
-            ]
+            ],
+            tooltip: "Puse es de el en vez de es suyo porque asi se dice aqui pero es lo mismo en darija (dialu)."
         },
         {
             es_title: "Suya",
@@ -314,34 +315,35 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La camisa amarilla es de el',
+                    ar: 'L9amija safra dialtu'
                 }
-            ]
+            ],
+            tooltip: "Puse es de el en vez de es suyo porque asi se dice aqui pero es lo mismo en darija (dialu)."
         },
         {
             es_title: "Suyos",
-            ar_title: "Diawelu",
+            ar_title: "Diawlu",
             es_example: "Libros suyos",
-            ar_example: "Ktuba diawelu",
+            ar_example: "Ktub diawlu",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Los pantalones son suyos no mios',
+                    ar: 'Srawel diawlu mashi diawli'
                 }
             ]
         },
         {
             es_title: "Suyas",
-            ar_title: "Diawelu",
+            ar_title: "Diawlu",
             es_example: "Camisas suyas",
-            ar_example: "9amijat diawelu",
+            ar_example: "9wamej diawlu",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Las gafas no son suyas (de el)',
+                    ar: 'Ndader mashi diawlu'
                 }
             ]
         },
@@ -353,8 +355,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Encontre su telefono apagado',
+                    ar: 'L9it tilifonu tafi'
                 }
             ],
             tooltip: "Se aumenta la 'u' al final"
@@ -367,8 +369,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Su comida esta afuera',
+                    ar: 'Makeltu kayna brra'
                 }
             ],
             tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tu' se elimina la 'a' "
@@ -381,8 +383,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Sus dientes son limpios',
+                    ar: 'Snanu n9iyin'
                 }
             ],
         },
@@ -390,15 +392,15 @@ const data = {
             es_title: "Sus",
             ar_title: "u",
             es_example: "Sus camisas",
-            ar_example: "9amijat u",
+            ar_example: "9wamej u",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Donde estan sus mochilas ?',
+                    ar: 'Fin kaynin shkayru ?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "shkayr (shkayer) es plural de shkara."
         },
     ],
 
@@ -411,10 +413,11 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Este libro es de ella',
+                    ar: 'Had lktab dialha'
                 }
-            ]
+            ],
+            tooltip: "Puse es de ella en vez de es suyo porque asi se dice aqui pero es lo mismo en darija (dialha)."
         },
         {
             es_title: "Suya",
@@ -424,36 +427,38 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La camisa amarilla no es de ella (suya)',
+                    ar: 'L9amija safra mashi dialha'
                 }
             ]
         },
         {
             es_title: "Suyos",
-            ar_title: "Diawelha",
+            ar_title: "Diawlha",
             es_example: "Libros suyos",
-            ar_example: "Ktuba diawelha",
+            ar_example: "Ktub diawlha",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Los pantalones amarillos son de ella (suyos)',
+                    ar: 'Srawel safrin diawlha'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlha aumentale la e (diawelha) :)"
         },
         {
             es_title: "Suyas",
-            ar_title: "Diawelha",
+            ar_title: "Diawlha",
             es_example: "Camisas suyas",
-            ar_example: "9amijat diawelha",
+            ar_example: "9wamej diawlha",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Las gafas negras no son de ella (suyas)',
+                    ar: 'Ndader lka7lin mashi diawlha'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlha aumentale la e (diawelha) :)"
         },
         {
             es_title: "Su",
@@ -463,8 +468,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Donde esta su telefono ?',
+                    ar: 'Fin kayn tilifonha'
                 }
             ],
             tooltip: "Se aumenta 'ha' al final"
@@ -477,8 +482,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Su camisa es bonita',
+                    ar: '9amijtha zwina'
                 }
             ],
             tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tha' se elimina la 'a' "
@@ -491,8 +496,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Traeme sus libros',
+                    ar: 'Jib lia ktubha'
                 }
             ],
         },
@@ -500,15 +505,15 @@ const data = {
             es_title: "Sus",
             ar_title: "ha",
             es_example: "Sus camisas",
-            ar_example: "9amijat ha",
+            ar_example: "9wamej ha",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Encontraste sus camisas ?',
+                    ar: 'L9iti 9wamejha ?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
     ],
 
@@ -521,8 +526,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'El cuarto es nuestro',
+                    ar: 'Lbit dialna'
                 }
             ]
         },
@@ -530,41 +535,43 @@ const data = {
             es_title: "Nuestra",
             ar_title: "Dialna",
             es_example: "Camisa nuestra",
-            ar_example: "9amija dialna",
+            ar_example: "9amija dialtna",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La casa es nuestra',
+                    ar: 'Dar dialna'
                 }
             ],
             tooltip: "Se puede decir dialna tambien aqui, es correcto de las dos formas 'dialna' o 'dialtna'"
         },
         {
             es_title: "Nuestros",
-            ar_title: "Diawelna",
+            ar_title: "Diawlna",
             es_example: "Libros nuestros",
-            ar_example: "Ktuba diawelna",
+            ar_example: "Ktub diawlna",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Los libros son nuestros',
+                    ar: 'Lktub diawlna'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlna aumentale la e (diawelna) :)"
         },
         {
             es_title: "Nuestras",
-            ar_title: "Diawelna",
+            ar_title: "Diawlna",
             es_example: "Camisas nuestras",
-            ar_example: "9amijat diawelna",
+            ar_example: "9wamej diawlna",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Las camisas no son nuestras',
+                    ar: 'L9wamj mashi diawlna'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlha aumentale la e (diawelha) :)"
         },
         {
             es_title: "Nuestro",
@@ -574,8 +581,8 @@ const data = {
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Nuestro cuarto es grande',
+                    ar: 'Bitna kbir'
                 }
             ],
             tooltip: "Se aumenta 'na' al final"
@@ -588,11 +595,11 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Nuestra casa es grande',
+                    ar: 'Darna kbira'
                 }
             ],
-            tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tna' se elimina la 'a' "
+            tooltip: "Dar es palabra feminina pero no termina con a, esta es una de las palabras femininas especiales :)"
         },
         {
             es_title: "Nuestros",
@@ -602,24 +609,24 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Nuestros hermanos son locos',
+                    ar: 'Khutna 7em9in'
                 }
             ],
         },
         {
-            es_title: "Nuestros",
+            es_title: "Nuestras",
             ar_title: "na",
-            es_example: "Nuestros camisas",
-            ar_example: "9amijat na",
+            es_example: "Nuestras camisas",
+            ar_example: "9wamej na",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Que quieren nuestras gatas ?',
+                    ar: 'Ash bghaw mshashna'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
     ],
 
@@ -627,66 +634,68 @@ const data = {
         {
             es_title: "Suyo",
             ar_title: "Dialkum",
-            es_example: "Libro suyo",
+            es_example: "Libro suyo (de ustedes)",
             ar_example: "Ktab dialkum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Este regalo es de ustedes ?',
+                    ar: 'Had lcado dialkum ?'
                 }
             ]
         },
         {
             es_title: "Suya",
             ar_title: "Dialtkum",
-            es_example: "Camisa suya",
+            es_example: "Camisa suya (de ustedes)",
             ar_example: "9amija dialtkum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La casa no es de ustedes',
+                    ar: 'Dar mashi dialtkum'
                 }
             ],
             tooltip: "Se puede decir dialkum tambien aqui, es correcto de las dos formas 'dialtkum' o 'dialkum'"
         },
         {
             es_title: "Suyos",
-            ar_title: "Diawelkum",
-            es_example: "Libros suyos",
-            ar_example: "Ktuba diawelkum",
+            ar_title: "Diawlkum",
+            es_example: "Libros suyos (de ustedes)",
+            ar_example: "Ktub diawlkum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Los perros son de ustedes ?',
+                    ar: 'Lklab diawlkum ?'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlkum aumentale la e (diawelkum) :)"
         },
         {
             es_title: "Suyas",
-            ar_title: "Diawelkum",
+            ar_title: "Diawlkum",
             es_example: "Camisas suyas",
-            ar_example: "9amijat diawelkum",
+            ar_example: "9wamej diawlkum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Las gatitas son de ustedes ?',
+                    ar: 'Lmshishat diawlkum'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlkum aumentale la e (diawelkum) :)"
         },
         {
             es_title: "Su",
             ar_title: "kum",
-            es_example: "su libro",
+            es_example: "su libro (de ustedes)",
             ar_example: "Ktab kum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Donde esta su cuarto ?',
+                    ar: 'Fin kayn bitkum ?'
                 }
             ],
             tooltip: "Se aumenta 'kum' al final"
@@ -694,13 +703,13 @@ const data = {
         {
             es_title: "Su",
             ar_title: "tkum",
-            es_example: "Su camisa",
+            es_example: "Su camisa (de ustedes)",
             ar_example: "9amij tkum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Su cocina es bonita',
+                    ar: 'Cozintkum zwina'
                 }
             ],
             tooltip: "Las palabras femininas casi siempre terminan con 'a' al final, y cuando se aumenta 'tkum' se elimina la 'a' "
@@ -713,8 +722,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Donde estan sus perros ?',
+                    ar: 'Fin kaynin klabkum ?'
                 }
             ],
         },
@@ -722,15 +731,15 @@ const data = {
             es_title: "Sus",
             ar_title: "kum",
             es_example: "Sus camisas",
-            ar_example: "9amijat kum",
+            ar_example: "9wamej kum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Donde estan sus gatas ?',
+                    ar: 'Fin kaynin mshishatkum ?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
     ],
 
@@ -738,13 +747,13 @@ const data = {
         {
             es_title: "Suyo",
             ar_title: "Dialhum",
-            es_example: "Libro suyo",
+            es_example: "Libro suyo (de ellos / ellas)",
             ar_example: "Ktab dialhum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Este libro es de ellos',
+                    ar: 'Had lktab dialhum'
                 }
             ]
         },
@@ -756,48 +765,50 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Esta casa es de ellos',
+                    ar: 'Had dar dialthum'
                 }
             ],
             tooltip: "Se puede decir dialhum tambien aqui, es correcto de las dos formas 'dialthum' o 'dialkum'"
         },
         {
             es_title: "Suyos",
-            ar_title: "Diawelhum",
-            es_example: "Libros suyos",
-            ar_example: "Ktuba diawelhum",
+            ar_title: "Diawlhum",
+            es_example: "Libros suyos (de ellos / ellas)",
+            ar_example: "Ktub diawlhum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Los libros son de ellos',
+                    ar: 'Lktub diawlhum'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlhum aumentale la e (diawelhum) :)"
         },
         {
             es_title: "Suyas",
-            ar_title: "Diawelhum",
+            ar_title: "Diawlhum",
             es_example: "Camisas suyas",
-            ar_example: "9amijat diawelhum",
+            ar_example: "9wamej diawlhum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Estas Escobas son de ellos',
+                    ar: 'Had shtabat diawlhum'
                 }
-            ]
+            ],
+            tooltip: "Si es dificil leer diawlhum aumentale la e (diawelhum) :)"
         },
         {
             es_title: "Su",
             ar_title: "hum",
-            es_example: "Su libro",
+            es_example: "Su libro (de ellos)",
             ar_example: "Ktab hum",
             gender: 'M',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'El cuarto de ellos no es grande',
+                    ar: 'Bithum mashi kbir'
                 }
             ],
             tooltip: "Se aumenta 'hum' al final"
@@ -810,11 +821,11 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'La casa de ellos es chiquita',
+                    ar: 'Darhum sghiwra'
                 }
             ],
-            tooltip: "Las palabras femininas casi casi siempre terminan con 'a' al final, y cuando se aumenta 'thum' se elimina la 'a' "
+            tooltip: "Dar es palabra feminina pero no termina con a, esta es una de las palabras femininas especiales :)"
         },
         {
             es_title: "Sus",
@@ -824,8 +835,8 @@ const data = {
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Sus perros son grandes',
+                    ar: 'Klabhum kbar'
                 }
             ],
         },
@@ -833,15 +844,15 @@ const data = {
             es_title: "Sus",
             ar_title: "hum",
             es_example: "Sus camisas",
-            ar_example: "9amijat hum",
+            ar_example: "9wamej hum",
             gender: 'F',
             examples: [
                 {
-                    es: '',
-                    ar: ''
+                    es: 'Viste sus mochilas ?',
+                    ar: 'Shefti shkayrhum ?'
                 }
             ],
-            tooltip: "9amijat es plural de 9amija"
+            tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e. shkayr (shkayer) es plural de shkara :)"
         },
     ]
 }
