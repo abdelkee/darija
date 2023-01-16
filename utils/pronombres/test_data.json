@@ -178,11 +178,11 @@
                     "options": [
                         {
                             "answer": "La! la mashi dialti",
-                            "correct": true
+                            "correct": false
                         },
                         {
                             "answer": "La! la mashi diali",
-                            "correct": false
+                            "correct": true
                         },
                         {
                             "answer": "La! la mashi diawli",
@@ -211,7 +211,213 @@
         },
         {
             "pronombreTitle": "tu",
-            "testData": []
+            "testData": [
+                {
+                    "question": "tuyo",
+                    "options": [
+                        {
+                            "answer": "dialk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialtk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tuya",
+                    "options": [
+                        {
+                            "answer": "dialk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "contigo",
+                    "options": [
+                        {
+                            "answer": "m3aya",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ak",
+                            "correct": true
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tu escoba",
+                    "options": [
+                        {
+                            "answer": "shtabtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "shtabtk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "shtaba",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tus libros",
+                    "options": [
+                        {
+                            "answer": "ktubk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ktubi",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktub",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tuyas",
+                    "options": [
+                        {
+                            "answer": "diawelna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "diawlk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialk",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No son tuyas",
+                    "options": [
+                        {
+                            "answer": "Mashi dialti",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi dialk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlk",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "tus gafas son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "ndader dialk n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ndaderek n9iyin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ndaderi n9iyin",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta contigo",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3ak",
+                            "correct": true
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3aya",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta tu camisa?",
+                    "options": [
+                        {
+                            "answer": "Fin kayn 9amijtk?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtk?",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtha?",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es tuya",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtk",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Ah! dialk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tu cuarto es bonito",
+                    "options": [
+                        {
+                            "answer": "bitha zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "biti zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitk zwin",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
         },
         {
             "pronombreTitle": "el",
