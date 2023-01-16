@@ -3,6 +3,37 @@ import data from "../../utils/pronombres/pronombres_data";
 import PronombreCard from "./PronombreCard";
 import TestQuiz from "./TestQuiz";
 
+const cardsData = [
+  {
+    title: { es: "Yo", ar: "Ana" },
+    data: data.yo,
+  },
+  {
+    title: { es: "Tu", ar: "Nta / Nti" },
+    data: data.tu,
+  },
+  {
+    title: { es: "El", ar: "Huua" },
+    data: data.el,
+  },
+  {
+    title: { es: "Ella", ar: "Hiyya" },
+    data: data.ella,
+  },
+  {
+    title: { es: "Nosotros/as", ar: "7na" },
+    data: data.nosotros,
+  },
+  {
+    title: { es: "Ustedes", ar: "Ntuuma" },
+    data: data.ustedes,
+  },
+  {
+    title: { es: "Ellos/as", ar: "Huuma" },
+    data: data.ellos,
+  },
+];
+
 export default function PronombresPage() {
   // ---- STYLES
   const s = {
@@ -36,35 +67,16 @@ export default function PronombresPage() {
       <main className="py-24 space-y-8">
         <div className={s.container}>
           <section title="RULES" className={s.cardsContainer}>
-            <PronombreCard pronombre={{ es: "Yo", ar: "Ana" }} data={data.yo} />
-            <PronombreCard
-              pronombre={{ es: "Tu", ar: "Nta / Nti" }}
-              data={data.tu}
-            />
-            <PronombreCard
-              pronombre={{ es: "El", ar: "Huua" }}
-              data={data.el}
-            />
-            <PronombreCard
-              pronombre={{ es: "Ella", ar: "Hiyya" }}
-              data={data.ella}
-            />
-            <PronombreCard
-              pronombre={{ es: "Nosotros/as", ar: "7na" }}
-              data={data.nosotros}
-            />
-            <PronombreCard
-              pronombre={{ es: "Ustedes", ar: "Ntuuma" }}
-              data={data.ustedes}
-            />
-            <PronombreCard
-              pronombre={{ es: "Ellos/as", ar: "Huuma" }}
-              data={data.ellos}
-            />
+            {cardsData.map((each, index) => (
+              <PronombreCard
+                key={each.title.es}
+                pronombre={each.title}
+                data={each.data}
+                testIndex={index}
+              />
+            ))}
           </section>
-          <section title="TEST" className={s.testContainer}>
-            <TestQuiz />
-          </section>
+          <section title="TEST" className={s.testContainer}></section>
         </div>
       </main>
     </>

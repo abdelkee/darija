@@ -3,8 +3,11 @@
 import ctl from "@netlify/classnames-template-literals";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
-import data from "../../utils/pronombres/test_data.json";
+import { TestDataType } from "../../types";
 
+type Props = {
+  testData: TestDataType;
+};
 interface OptionType {
   answer: string;
   correct: boolean;
@@ -14,12 +17,14 @@ interface QuestionType {
   options: OptionType[];
 }
 
-export default function TestQuiz() {
+export default function TestQuiz({ testData }: Props) {
   // ---- HOOKS
   const [showQuiz, setShowQuiz] = useState<boolean>(false);
   const [question, setQuestion] = useState<QuestionType | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<string[]>([]);
   const [optionSelected, setOptionSelected] = useState<boolean | null>(null);
+  const [score, setScore] = useState<number>(0);
+  const [yell, setYell] = useState<boolean>(false);
 
   // ---- FUNCTIONS
   const startQuiz = () => {
@@ -32,17 +37,25 @@ export default function TestQuiz() {
 
   const selectOption = (answer: boolean) => {
     setOptionSelected(answer);
+    if (!answer && score > 0) {
+      setScore((curr) => curr - 1);
+      setYell(true);
+    }
+
+    if (answer) {
+      setScore((curr) => curr + 1);
+      setYell(false);
+      pickQuestion();
+    }
   };
 
-  const testQuestions = data.data[0].testData;
-  const generateQuestion = testQuestions[Math.floor(Math.random() * 6)];
+  const generateQuestion =
+    testData?.testData[Math.floor(Math.random() * testData?.testData.length)];
 
   const pickQuestion = () => {
     setQuestion(generateQuestion);
     setOptionSelected(null);
   };
-
-  console.log(optionSelected);
 
   // ---- STYLES
   const s = {
@@ -79,10 +92,12 @@ export default function TestQuiz() {
         text-pink-700
     `),
     questionSection: ctl(`
+        relative
         bg-gradient-to-br
         from-indigo-700
         to-purple-500
         w-full
+        text-center
         h-3/5
         rounded-xl
         grid
@@ -92,6 +107,7 @@ export default function TestQuiz() {
         tracking-wide
         capitalize
         shadow-xl
+        ${yell && "shadow-red-500"}
     `),
     answersSection: ctl(`
         h-2/5
@@ -115,30 +131,54 @@ export default function TestQuiz() {
         right-4
         bg-indigo-600
     `),
+    score: ctl(`
+      absolute
+      top-8
+      left-1/2
+      -translate-x-1/2
+    `),
   };
 
   // ---- JSX
   return (
     <>
-      <button className={s.testBtn} onClick={startQuiz}>
-        Start test
+      <button
+        className={s.testBtn}
+        onClick={startQuiz}
+        disabled={!testData || testData?.testData.length === 0}
+      >
+        {"Start test ( "}
+        {testData?.pronombreTitle}
+        {" )"}
       </button>
+
+      {/* ----THE QUIZ---- */}
       {showQuiz && (
         <div className={s.quizContainer}>
           <button className={s.closeBtn} onClick={closeQuiz}>
             <MdClose size={"24px"} />
           </button>
-          <section title="QUESTION" className={s.questionSection}>
-            <p>{question?.question}</p>
+
+          {/* ----QUESTION---- */}
+          <section className={s.questionSection}>
+            <h2 className={s.score}>{score}</h2>
+            <h2>{question?.question}</h2>
           </section>
-          <section title="ANSWERS" className={s.answersSection}>
+
+          {/* ----ANSWERS---- */}
+          <section className={s.answersSection}>
             {question?.options.map((option) => {
               const answer = optionSelected && option.correct;
               return (
                 <button
                   key={option.answer}
                   className={
-                    s.optionBtn + ` ${answer ? "bg-green-500" : "bg-pink-700"}`
+                    s.optionBtn +
+                    ` ${
+                      answer
+                        ? "bg-green-500"
+                        : "bg-gradient-to-r from-pink-700 to-orange-700"
+                    }`
                   }
                   onClick={() => selectOption(option.correct)}
                 >
@@ -147,13 +187,15 @@ export default function TestQuiz() {
               );
             })}
           </section>
-          <button
+
+          {/* ----NEXT BUTTON---- */}
+          {/* <button
             onClick={pickQuestion}
             className={s.nextBtn}
             disabled={!optionSelected}
           >
             Next
-          </button>
+          </button> */}
         </div>
       )}
     </>

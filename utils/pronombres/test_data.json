@@ -155,8 +155,83 @@
                             "correct": true
                         }
                     ]
+                },
+                {
+                    "question": "Donde esta mi telefono?",
+                    "options": [
+                        {
+                            "answer": "Fin kayn tilifoni?",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Fin kayna tilifoni?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayn tilifonu?",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No! no es mio",
+                    "options": [
+                        {
+                            "answer": "La! la mashi dialti",
+                            "correct": true
+                        },
+                        {
+                            "answer": "La! la mashi diali",
+                            "correct": false
+                        },
+                        {
+                            "answer": "La! la mashi diawli",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No toques mi camisa",
+                    "options": [
+                        {
+                            "answer": "Ma t9ish 9amijtk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ma t9ish 9amija",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ma t9ish 9amijti",
+                            "correct": true
+                        }
+                    ]
                 }
             ]
+        },
+        {
+            "pronombreTitle": "tu",
+            "testData": []
+        },
+        {
+            "pronombreTitle": "el",
+            "testData": []
+        },
+        {
+            "pronombreTitle": "ella",
+            "testData": []
+        },
+        {
+            "pronombreTitle": "nosotros",
+            "testData": []
+        },
+        {
+            "pronombreTitle": "ustedes",
+            "testData": []
+        },
+        {
+            "pronombreTitle": "ellos",
+            "testData": []
         }
     ]
 }

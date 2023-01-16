@@ -6,6 +6,8 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import ctl from "@netlify/classnames-template-literals";
 import { PronombreType } from "../../types";
 import Pronombre from "./Pronombre";
+import TestQuiz from "./TestQuiz";
+import testData from "../../utils/pronombres/test_data.json";
 
 type Props = {
   pronombre: {
@@ -13,9 +15,10 @@ type Props = {
     ar: string;
   };
   data: PronombreType[];
+  testIndex: number;
 };
 
-export default function PronombreCard({ pronombre, data }: Props) {
+export default function PronombreCard({ pronombre, data, testIndex }: Props) {
   // ---- HOOKS
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -115,6 +118,7 @@ export default function PronombreCard({ pronombre, data }: Props) {
               tipo={tipo}
             />
           ))}
+          <TestQuiz testData={testData.data[testIndex]} />
         </section>
       )}
     </>

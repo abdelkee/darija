@@ -32,3 +32,16 @@ export interface CategoryType {
     image_url: string
     data: ItemType[]
 }
+
+export interface TestDataType {
+    pronombreTitle: string,
+    testData: {
+        question: string,
+        options:
+        {
+            answer: string,
+            correct: boolean
+        }[]
+    }[]
+
+}
