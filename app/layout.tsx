@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body className="text-green-900 bg-neutral-50">
+      <body className="text-green-900 bg-neutral-50 ">
         <ContextProvider>
           <AppBar />
           {children}

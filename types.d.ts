@@ -45,3 +45,12 @@ export interface TestDataType {
     }[]
 
 }
+
+export interface FrasesDataType {
+    category: string,
+    frases: {
+        id: string
+        es_frase: string
+        ar_frase: string
+    }[]
+}

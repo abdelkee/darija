@@ -5,12 +5,19 @@ import { CategoryType } from "../types";
 
 type StateType = {
   data: CategoryType | null;
+  selectedFrasesCategory: string;
 };
 
-type ActionType = { type: "setData"; payload: CategoryType };
+type ActionType =
+  | { type: "setData"; payload: StateType["data"] }
+  | {
+      type: "set_selected_frases_category";
+      payload: StateType["selectedFrasesCategory"];
+    };
 
 const initialState: StateType = {
   data: null,
+  selectedFrasesCategory: "",
 };
 
 type ContextType = {
@@ -29,6 +36,11 @@ const appReducer = (state: StateType, action: ActionType) => {
       return {
         ...state,
         data: action.payload,
+      };
+    case "set_selected_frases_category":
+      return {
+        ...state,
+        selectedFrasesCategory: action.payload,
       };
     default:
       return state;

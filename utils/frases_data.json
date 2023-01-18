@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "category": "Visita",
+            "frases": [
+                {
+                    "id": "1",
+                    "es_frase": "Hola! bienvenidos",
+                    "ar_frase": "Ahlan! mar7ba bikum"
+                },
+                {
+                    "id": "2",
+                    "es_frase": "Esta bonita la casa",
+                    "ar_frase": "Dar zwina. (tbarkalah)"
+                },
+                {
+                    "id": "3",
+                    "es_frase": "Disculpe! Donde esta el baño ?",
+                    "ar_frase": "Sme7li! Fin kayn tualit ?"
+                }
+            ]
+        },
+        {
+            "category": "Restaurante",
+            "frases": [
+                {
+                    "id": "1",
+                    "es_frase": "El menu por favor",
+                    "ar_frase": "lmenu 3afak"
+                },
+                {
+                    "id": "2",
+                    "es_frase": "A mi me das este y este",
+                    "ar_frase": "Ana 3tini hada u hada"
+                },
+                {
+                    "id": "3",
+                    "es_frase": "Me das un cafe pero sin crema",
+                    "ar_frase": "3tini l9ehwa walakin bla la creme"
+                },
+                {
+                    "id": "4",
+                    "es_frase": "Traeme un vaso de agua por favor",
+                    "ar_frase": "Jib lia wahd lkas dial lma 3afak"
+                },
+                {
+                    "id": "5",
+                    "es_frase": "La cuenta por favor",
+                    "ar_frase": "L7sab 3afak"
+                },
+                {
+                    "id": "6",
+                    "es_frase": "Cuanto es en total ?",
+                    "ar_frase": "Sh7al f total ?"
+                },
+                {
+                    "id": "7",
+                    "es_frase": "Aun no esta mi pedido ?",
+                    "ar_frase": "Ba9i mawjed talab diali ?"
+                }
+            ]
+        }
+    ]
+}

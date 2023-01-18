@@ -428,7 +428,7 @@ const data = {
             examples: [
                 {
                     es: 'La camisa amarilla no es de ella (suya)',
-                    ar: 'L9amija safra mashi dialha'
+                    ar: 'L9amija safra mashi dialtha'
                 }
             ]
         },
