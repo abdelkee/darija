@@ -5,8 +5,8 @@ function FrasesPage() {
   // ---- HOOKS
   return (
     <main
-      className="py-24 sm:py-32 w-full h-screen sm:flex"
-      style={{ backgroundColor: "#5479AA" }}
+      className="py-24 sm:py-32 w-full h-full sm:flex"
+      style={{ backgroundColor: "#7193C1" }}
     >
       <PhraseCategoriesList />
       <PhrasesList />

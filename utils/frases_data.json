@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "category": "Visita",
+            "category": "Saludos",
             "frases": [
                 {
                     "id": "1",
@@ -10,14 +10,90 @@
                 },
                 {
                     "id": "2",
-                    "es_frase": "Esta bonita la casa",
-                    "ar_frase": "Dar zwina. (tbarkalah)"
+                    "es_frase": "Buenos dias!",
+                    "ar_frase": "Sba7 lkhir"
                 },
                 {
                     "id": "3",
-                    "es_frase": "Disculpe! Donde esta el baño ?",
-                    "ar_frase": "Sme7li! Fin kayn tualit ?"
+                    "es_frase": "Como estas ?",
+                    "ar_frase": "Kidayr ? | Kidayra ?"
+                },
+                {
+                    "id": "4",
+                    "es_frase": "Bien gracias a dios",
+                    "ar_frase": "Labas l7amdulilah"
+                },
+                {
+                    "id": "5",
+                    "es_frase": "Todo bien",
+                    "ar_frase": "Kulshi bikhir"
+                },
+                {
+                    "id": "6",
+                    "es_frase": "Que hay de nuevo de ti ?",
+                    "ar_frase": "Ash khbark ?"
+                },
+                {
+                    "id": "7",
+                    "es_frase": "Que cuentas de nuevo ?",
+                    "ar_frase": "Ash kat3awd ?"
+                },
+                {
+                    "id": "8",
+                    "es_frase": "Como esta la familia ?",
+                    "ar_frase": "Kidayra l3a-ila ? | Kidayrin malin dar ?"
+                },
+                {
+                    "id": "9",
+                    "es_frase": "Tus padres estan bien ?",
+                    "ar_frase": "Lwalidin labas 3lihum ?"
+                },
+                {
+                    "id": "10",
+                    "es_frase": "Todos estan bien",
+                    "ar_frase": "Kamlin labas 3lihum"
+                },
+                {
+                    "id": "11",
+                    "es_frase": "Como estan los niños ?",
+                    "ar_frase": "Kidayrin lulidat ?"
+                },
+                {
+                    "id": "12",
+                    "es_frase": "Como esta tu papi y tu mami ?",
+                    "ar_frase": "Kidayr lwalid ulwalida ? | Kidayr babak u mamak ?"
+                },
+                {
+                    "id": "13",
+                    "es_frase": "Saludos te mandaron",
+                    "ar_frase": "Tayselmu 3lik"
+                },
+                {
+                    "id": "14",
+                    "es_frase": "Te acostumbraste ?",
+                    "ar_frase": "Welefti ? | Welefti shwiya ?"
+                },
+                {
+                    "id": "15",
+                    "es_frase": "Si, un poco",
+                    "ar_frase": "Ah, shwiya"
+                },
+                {
+                    "id": "16",
+                    "es_frase": "Como vas con el trabajo ?",
+                    "ar_frase": "Kidayr m3a l3amal ?"
+                },
+                {
+                    "id": "17",
+                    "es_frase": "Como vas con los estudios ?",
+                    "ar_frase": "Kidayra m3a l9raya ?"
+                },
+                {
+                    "id": "18",
+                    "es_frase": "Bien, luchando",
+                    "ar_frase": "Mzyan, tan3ediw"
                 }
+                
             ]
         },
         {
