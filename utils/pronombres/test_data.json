@@ -421,11 +421,423 @@
         },
         {
             "pronombreTitle": "el",
-            "testData": []
+            "testData": [
+                {
+                    "question": "suyo",
+                    "options": [
+                        {
+                            "answer": "dialu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "suya",
+                    "options": [
+                        {
+                            "answer": "dialtha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "con el",
+                    "options": [
+                        {
+                            "answer": "m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": true
+                        },
+                        {
+                            "answer": "m3ana",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "su escoba",
+                    "options": [
+                        {
+                            "answer": "shtabtu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "shtabtk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "shtaba",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus libros",
+                    "options": [
+                        {
+                            "answer": "ktubu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ktubha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktub",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "suyas",
+                    "options": [
+                        {
+                            "answer": "dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "diawlu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No son suyas",
+                    "options": [
+                        {
+                            "answer": "Mashi dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlu",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "sus gafas son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "ndader dialha n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ndaderu n9iyin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ndaderi n9iyin",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta con el",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3ak",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": true
+                        },
+                        {
+                            "answer": "tagayut kayn m3aya",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta su camisa?",
+                    "options": [
+                        {
+                            "answer": "Fin kayn 9amijtha?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtk?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtu?",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es suya",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtu",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Ah! dialu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "su cuarto es bonito",
+                    "options": [
+                        {
+                            "answer": "bitha zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitu zwin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "bitkum zwin",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
         },
         {
             "pronombreTitle": "ella",
-            "testData": []
+            "testData": [
+                {
+                    "question": "suyo",
+                    "options": [
+                        {
+                            "answer": "dialu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "suya",
+                    "options": [
+                        {
+                            "answer": "dialtha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "con ella",
+                    "options": [
+                        {
+                            "answer": "m3aha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ana",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "su escoba",
+                    "options": [
+                        {
+                            "answer": "shtabtha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "shtabtk",
+                            "correct": false
+                        },
+                        {
+                            "answer": "shtaba",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus libros",
+                    "options": [
+                        {
+                            "answer": "ktubu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktubha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ktub",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "suyas",
+                    "options": [
+                        {
+                            "answer": "diawlha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "diawlu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No son suyas",
+                    "options": [
+                        {
+                            "answer": "Mashi dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Mashi diawlu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus gafas son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "ndader dialha n9iyin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ndaderu n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ndaderi n9iyin",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta con el",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3aha",
+                            "correct": true
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3aya",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta su camisa?",
+                    "options": [
+                        {
+                            "answer": "Fin kayn 9amijtha?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtha?",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Fin kayna 9amijtu?",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es suya",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialtha",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "su cuarto es bonito",
+                    "options": [
+                        {
+                            "answer": "bitha zwin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "bitu zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitkum zwin",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
         },
         {
             "pronombreTitle": "nosotros",
