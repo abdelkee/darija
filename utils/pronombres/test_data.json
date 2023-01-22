@@ -633,7 +633,7 @@
             "pronombreTitle": "ella",
             "testData": [
                 {
-                    "question": "suyo",
+                    "question": "suyo (de ella)",
                     "options": [
                         {
                             "answer": "dialu",
@@ -650,7 +650,7 @@
                     ]
                 },
                 {
-                    "question": "suya",
+                    "question": "suya (de ella)",
                     "options": [
                         {
                             "answer": "dialtha",
@@ -684,7 +684,7 @@
                     ]
                 },
                 {
-                    "question": "su escoba",
+                    "question": "su escoba (ella)",
                     "options": [
                         {
                             "answer": "shtabtha",
@@ -701,7 +701,7 @@
                     ]
                 },
                 {
-                    "question": "sus libros",
+                    "question": "sus libros (de ella)",
                     "options": [
                         {
                             "answer": "ktubu",
@@ -718,7 +718,7 @@
                     ]
                 },
                 {
-                    "question": "suyas",
+                    "question": "suyas (de ella)",
                     "options": [
                         {
                             "answer": "diawlha",
@@ -735,7 +735,7 @@
                     ]
                 },
                 {
-                    "question": "No son suyas",
+                    "question": "No son suyas (de ella)",
                     "options": [
                         {
                             "answer": "Mashi dialtu",
@@ -752,7 +752,7 @@
                     ]
                 },
                 {
-                    "question": "sus gafas son limpias",
+                    "question": "sus gafas (de ella) son limpias",
                     "options": [
                         {
                             
@@ -770,7 +770,7 @@
                     ]
                 },
                 {
-                    "question": "tagayut esta con el",
+                    "question": "tagayut esta con ella",
                     "options": [
                         {
                             "answer": "tagayut kayn m3aha",
@@ -787,7 +787,7 @@
                     ]
                 },
                 {
-                    "question": "Donde esta su camisa?",
+                    "question": "Donde esta su camisa? (de ella)",
                     "options": [
                         {
                             "answer": "Fin kayn 9amijtha?",
@@ -804,7 +804,7 @@
                     ]
                 },
                 {
-                    "question": "Si! es suya",
+                    "question": "Si! es suya (de ella)",
                     "options": [
                         {
                             "answer": "Ah! dialtu",
@@ -821,7 +821,7 @@
                     ]
                 },
                 {
-                    "question": "su cuarto es bonito",
+                    "question": "su cuarto (de ella) es bonito ",
                     "options": [
                         {
                             "answer": "bitha zwin",
