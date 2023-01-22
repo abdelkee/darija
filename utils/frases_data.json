@@ -135,6 +135,51 @@
                     "ar_frase": "Ba9i mawjed talab diali ?"
                 }
             ]
+        },
+        {
+            "category": "Shopping",
+            "frases": [
+                {
+                    "id": "1",
+                    "es_frase": "Tienes la talla x ?",
+                    "ar_frase": "3endek l9yas x ?"
+                },
+                {
+                    "id": "2",
+                    "es_frase": "Esta un poco grande, dame una talla menos",
+                    "ar_frase": "Kbira shwiya, 3tini 9yas 9el"
+                },
+                {
+                    "id": "3",
+                    "es_frase": "Esta apretado este, no me queda bien",
+                    "ar_frase": "Hada mzyer, majanish mzyan"
+                },
+                {
+                    "id": "4",
+                    "es_frase": "Que colores tienes de este ?",
+                    "ar_frase": "Ash men lwan 3endek fhada ?"
+                },
+                {
+                    "id": "5",
+                    "es_frase": "Quiero ese que esta arriba",
+                    "ar_frase": "Bghit hadak likayn lfu9"
+                },
+                {
+                    "id": "6",
+                    "es_frase": "Cuanto cuesta este ?",
+                    "ar_frase": "Bsh7al hada ?"
+                },
+                {
+                    "id": "7",
+                    "es_frase": "No me gusta, me queda flojo",
+                    "ar_frase": "Ma3jebnish, jani 3rid"
+                },
+                {
+                    "id": "8",
+                    "es_frase": "Este si me queda bien",
+                    "ar_frase": "Hada jani mzyan"
+                }
+            ]
         }
     ]
 }

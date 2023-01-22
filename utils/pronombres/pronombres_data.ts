@@ -402,6 +402,23 @@ const data = {
             ],
             tooltip: "shkayr (shkayer) es plural de shkara."
         },
+        {
+            es_title: "Con el",
+            ar_title: "M3ah",
+            es_example: "Anda con el",
+            ar_example: "Sir m3ah",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Jango esta con el',
+                    ar: 'Jango kayn m3ah'
+                },
+                {
+                    es: 'Yo voy con el',
+                    ar: 'Ana nemshi m3ah'
+                }
+            ]
+        },
     ],
 
     ella: [
@@ -514,6 +531,23 @@ const data = {
                 }
             ],
             tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
+        },
+        {
+            es_title: "Con ella",
+            ar_title: "M3aha",
+            es_example: "Anda con ella",
+            ar_example: "Sir m3aha",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Jango esta con ella',
+                    ar: 'Jango kayn m3aha'
+                },
+                {
+                    es: 'Yo voy con ella',
+                    ar: 'Ana nemshi m3aha'
+                }
+            ]
         },
     ],
 
@@ -628,6 +662,23 @@ const data = {
             ],
             tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
+        {
+            es_title: "Con nosotros",
+            ar_title: "M3ana",
+            es_example: "Ven con nosotros",
+            ar_example: "Aji m3ana",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Jango esta con nosotros',
+                    ar: 'Jango kayn m3ana'
+                },
+                {
+                    es: 'Quieres jugar con nosotros ?',
+                    ar: 'Bghiti tel3eb m3ana ?'
+                }
+            ]
+        },
     ],
 
     ustedes: [
@@ -741,6 +792,19 @@ const data = {
             ],
             tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e"
         },
+        {
+            es_title: "Con ustedes",
+            ar_title: "M3akum",
+            es_example: "Voy con ustedes ?",
+            ar_example: "Nemshi m3akum ?",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Jango esta con ustedes',
+                    ar: 'Jango kayn m3akum'
+                }
+            ]
+        },
     ],
 
     ellos: [
@@ -853,6 +917,19 @@ const data = {
                 }
             ],
             tooltip: "9wamej es plural de 9amija. se pronuncia 9wamj sin la e. shkayr (shkayer) es plural de shkara :)"
+        },
+        {
+            es_title: "Con ellos/ellas",
+            ar_title: "M3ahum",
+            es_example: "Anda con ellos",
+            ar_example: "Sir m3ahum",
+            gender: 'F',
+            examples: [
+                {
+                    es: 'Jango esta con ellas',
+                    ar: 'Jango kayn m3ahum'
+                }
+            ]
         },
     ]
 }
