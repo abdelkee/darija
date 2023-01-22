@@ -756,7 +756,7 @@
                     "options": [
                         {
                             
-                            "answer": "ndader dialha n9iyin",
+                            "answer": "ndaderha n9iyin",
                             "correct": true
                         },
                         {
@@ -841,11 +841,423 @@
         },
         {
             "pronombreTitle": "nosotros",
-            "testData": []
+            "testData": [
+                {
+                    "question": "nuestro",
+                    "options": [
+                        {
+                            "answer": "dialna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialtu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestra",
+                    "options": [
+                        {
+                            "answer": "dialtha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialna",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "con nosotros",
+                    "options": [
+                        {
+                            "answer": "m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ana",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestra camisa",
+                    "options": [
+                        {
+                            "answer": "9amijtna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "9amijtha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "9amijtu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestros libros",
+                    "options": [
+                        {
+                            "answer": "ktubu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktubna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ktub",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestras",
+                    "options": [
+                        {
+                            "answer": "diawlna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "diawlhum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No son nuestras",
+                    "options": [
+                        {
+                            "answer": "Mashi diawlha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Mashi diawlu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestras casas son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "dyurha n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dyurna n9iyin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dyuri n9iyin",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta con nosotros",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ana",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta nuestra escoba?",
+                    "options": [
+                        {
+                            "answer": "Fin kayna shtabtha?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna shtabtna?",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Fin kayna shtabtu?",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es nuestra",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtna",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Ah! dialu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialtha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "nuestro cuarto es bonito ",
+                    "options": [
+                        {
+                            "answer": "bitna zwin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "bitu zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitha zwin",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
         },
         {
             "pronombreTitle": "ustedes",
-            "testData": []
+            "testData": [
+                {
+                    "question": "de ustedes (masc)",
+                    "options": [
+                        {
+                            "answer": "dialna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialtkum",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "de ustedes (fem)",
+                    "options": [
+                        {
+                            "answer": "dialtha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialna",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "con ustedes",
+                    "options": [
+                        {
+                            "answer": "m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3akum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "su camisa (de ustedes)",
+                    "options": [
+                        {
+                            "answer": "9amijtna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "9amijtkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "9amijtu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus libros (de ustedes)",
+                    "options": [
+                        {
+                            "answer": "ktubkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "ktubna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktubhum",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "de ustedes (fem plur)",
+                    "options": [
+                        {
+                            "answer": "diawlna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "diawlhum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "diawlkum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "No son de ustedes (masc plur)",
+                    "options": [
+                        {
+                            "answer": "Mashi diawlkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Mashi diawlna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus casas (de ustedes) son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "dyuru n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dyurhum n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dyurkum n9iyin",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta con ustedes",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3akum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta su (de ustedes) casa?",
+                    "options": [
+                        {
+                            "answer": "Fin kayna darna?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna darhum?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna darkum?",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es de ustedes (fem)",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtkum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Ah! dialu",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialtha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "su (de ustedes) cuarto es bonito ",
+                    "options": [
+                        {
+                            "answer": "bitna zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitu zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitkum zwin",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
         },
         {
             "pronombreTitle": "ellos",
