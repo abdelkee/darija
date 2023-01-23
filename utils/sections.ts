@@ -30,10 +30,10 @@ export const data = [
         "path": "/alimentos"
     },
     {
-        "title": "Preguntas",
-        "img": "/img/question.png",
-        "color": "#0EA5E9",
-        "path": "/preguntas"
+        "title": "Demostrativos",
+        "img": "/img/demostrativo.png",
+        "color": "#FFD1A3",
+        "path": "/demostrativos"
     },
     {
         "title": "Clima",

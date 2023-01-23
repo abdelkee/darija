@@ -54,3 +54,12 @@ export interface FrasesDataType {
         ar_frase: string
     }[]
 }
+
+export interface DemoDataType {
+    es_title: string
+    ar_title: string
+    examples: {
+        es_example: string
+        ar_example: string
+    }[]
+}

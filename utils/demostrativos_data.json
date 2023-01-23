@@ -1,0 +1,212 @@
+{
+    "data": [
+        {
+            "es_title": "Este",
+            "ar_title": "Hada",
+            "examples": [
+                {
+                    "es_example": "Este es mio",
+                    "ar_example": "Hada diali"
+                },
+                {
+                    "es_example": "Este no",
+                    "ar_example": "Hada la"
+                },
+                {
+                    "es_example": "Este es rojo",
+                    "ar_example": "Hada hmer"
+                },
+                {
+                    "es_example": "Este vaso es lindo",
+                    "ar_example": "Had lkas zwin"
+                },
+                {
+                    "es_example": "Este es lindo",
+                    "ar_example": "Hada zwin"
+                }
+            ]
+        },
+        {
+            "es_title": "Esta",
+            "ar_title": "Hadi",
+            "examples": [
+                {
+                    "es_example": "Esta es mia",
+                    "ar_example": "Hadi dialti"
+                },
+                {
+                    "es_example": "Esta no",
+                    "ar_example": "Hadi la"
+                },
+                {
+                    "es_example": "Esta es roja",
+                    "ar_example": "Hadi hemra"
+                },
+                {
+                    "es_example": "Esta camisa es linda",
+                    "ar_example": "Had l9amija zwina"
+                },
+                {
+                    "es_example": "Esta es linda",
+                    "ar_example": "Hadi zwina"
+                }
+            ]
+        },
+        {
+            "es_title": "Ese",
+            "ar_title": "Hadak",
+            "examples": [
+                {
+                    "es_example": "Ese es mio",
+                    "ar_example": "Hadak diali"
+                },
+                {
+                    "es_example": "Ese no",
+                    "ar_example": "Hadak la"
+                },
+                {
+                    "es_example": "Ese es rojo",
+                    "ar_example": "Hadak hmer"
+                },
+                {
+                    "es_example": "Ese vaso es lindo",
+                    "ar_example": "Hadak lkas zwin"
+                },
+                {
+                    "es_example": "Ese es lindo",
+                    "ar_example": "Hadak zwin"
+                }
+            ]
+        },
+        {
+            "es_title": "Esa",
+            "ar_title": "Hadik",
+            "examples": [
+                {
+                    "es_example": "Esa es mia",
+                    "ar_example": "Hadik dialti"
+                },
+                {
+                    "es_example": "Esa no",
+                    "ar_example": "Hadik la"
+                },
+                {
+                    "es_example": "Esa es roja",
+                    "ar_example": "Hadik hemra"
+                },
+                {
+                    "es_example": "Esa camisa es linda",
+                    "ar_example": "Hadik l9amija zwina"
+                },
+                {
+                    "es_example": "Esa es linda",
+                    "ar_example": "Hadik zwina"
+                }
+            ]
+        },
+        {
+            "es_title": "Estos",
+            "ar_title": "Hadu",
+            "examples": [
+                {
+                    "es_example": "Estos son mios",
+                    "ar_example": "Hadu diawli"
+                },
+                {
+                    "es_example": "Estos no",
+                    "ar_example": "Hadu la"
+                },
+                {
+                    "es_example": "Estos son rojos",
+                    "ar_example": "Hadu hemrin"
+                },
+                {
+                    "es_example": "Estos vasos son lindos",
+                    "ar_example": "Had lkisan zwinin"
+                },
+                {
+                    "es_example": "Estos son lindos",
+                    "ar_example": "Hadu zwinin"
+                }
+            ]
+        },
+        {
+            "es_title": "Estas",
+            "ar_title": "Hadu",
+            "examples": [
+                {
+                    "es_example": "Estas son mias",
+                    "ar_example": "Hadu diawli"
+                },
+                {
+                    "es_example": "Estas no",
+                    "ar_example": "Hadu la"
+                },
+                {
+                    "es_example": "Estas son rojas",
+                    "ar_example": "Hadu hemrin"
+                },
+                {
+                    "es_example": "Estas camisas son lindas",
+                    "ar_example": "Had l9wamej zwinin"
+                },
+                {
+                    "es_example": "Estas son lindas",
+                    "ar_example": "Hadu zwinin"
+                }
+            ]
+        },
+        {
+            "es_title": "Esos",
+            "ar_title": "Haduk",
+            "examples": [
+                {
+                    "es_example": "Esos son mios",
+                    "ar_example": "Haduk diawli"
+                },
+                {
+                    "es_example": "Esos no",
+                    "ar_example": "Haduk la"
+                },
+                {
+                    "es_example": "Esos son rojos",
+                    "ar_example": "Haduk hemrin"
+                },
+                {
+                    "es_example": "Esos vasos son lindos",
+                    "ar_example": "Haduk lkisan zwinin"
+                },
+                {
+                    "es_example": "Esos son lindos",
+                    "ar_example": "Haduk zwinin"
+                }
+            ]
+        },
+        {
+            "es_title": "Esas",
+            "ar_title": "Haduk",
+            "examples": [
+                {
+                    "es_example": "Esas son mias",
+                    "ar_example": "Haduk diawli"
+                },
+                {
+                    "es_example": "Esas no",
+                    "ar_example": "Haduk la"
+                },
+                {
+                    "es_example": "Esas son rojas",
+                    "ar_example": "Haduk hemrin"
+                },
+                {
+                    "es_example": "Esas camisas son lindas",
+                    "ar_example": "Haduk l9wamej zwinin"
+                },
+                {
+                    "es_example": "Esas son lindas",
+                    "ar_example": "Haduk zwinin"
+                }
+            ]
+        }
+    ]
+}
