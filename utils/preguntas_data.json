@@ -1,0 +1,232 @@
+{
+    "data": [
+        {
+            "es_title": "Como..?",
+            "ar_title": "Kifash..?",
+            "examples": [
+                {
+                    "es_example": "Como hago ?",
+                    "ar_example": "Kifash ndir ?"
+                },
+                {
+                    "es_example": "Como quieres tu sanduche ?",
+                    "ar_example": "Kifash bghiti sandwich dialk ?"
+                },
+                {
+                    "es_example": "Como ?!",
+                    "ar_example": "Kifash ?!"
+                }
+            ]
+        },
+        {
+            "es_title": "Que..?",
+            "ar_title": "Ash..? / Ashnu..?",
+            "examples": [
+                {
+                    "es_example": "Que haces ?",
+                    "ar_example": "Ash kadir ?"
+                },
+                {
+                    "es_example": "Que quieres ?",
+                    "ar_example": "Ash bghiti ?"
+                },
+                {
+                    "es_example": "Que ?!",
+                    "ar_example": "Ashnu ?!"
+                },
+                {
+                    "es_example": "Que hago ahora ?",
+                    "ar_example": "Ash ghandir daba ?"
+                }
+                
+            ]
+        },
+        {
+            "es_title": "Quien..?",
+            "ar_title": "Shkun..?",
+            "examples": [
+                {
+                    "es_example": "Quien quiere el jugo ?",
+                    "ar_example": "Shkun bgha l3asir ?"
+                },
+                {
+                    "es_example": "Quien es ese señor ?",
+                    "ar_example": "Shkun huua hadak siyed ?"
+                },
+                {
+                    "es_example": "Quien ?!",
+                    "ar_example": "Shkun ?!"
+                },
+                {
+                    "es_example": "Quien es ?",
+                    "ar_example": "Shkun ?"
+                }
+                
+            ]
+        },
+        {
+            "es_title": "Cuando..?",
+            "ar_title": "Imta..?",
+            "examples": [
+                {
+                    "es_example": "Cuando vas a llegar ?",
+                    "ar_example": "Imta ghadi tosel ?"
+                },
+                {
+                    "es_example": "Cuando es la boda ?",
+                    "ar_example": "Imta l3ers ?"
+                },
+                {
+                    "es_example": "Cuando ?!",
+                    "ar_example": "Imta ?!"
+                },
+                {
+                    "es_example": "Cuando lo quieres ?",
+                    "ar_example": "Imta bghitih ?"
+                }
+                
+            ]
+        },
+        {
+            "es_title": "De donde..?",
+            "ar_title": "Mnin..?",
+            "examples": [
+                {
+                    "es_example": "De donde eres ?",
+                    "ar_example": "Mnin nta/nti ?"
+                },
+                {
+                    "es_example": "De donde sacaste esto ?",
+                    "ar_example": "Mnin jebti hadshi ?"
+                },
+                {
+                    "es_example": "De donde ?!",
+                    "ar_example": "Mnin ?!"
+                }
+                
+            ]
+        },
+        {
+            "es_title": "Donde..?",
+            "ar_title": "Fin..?",
+            "examples": [
+                {
+                    "es_example": "Donde vives ?",
+                    "ar_example": "Fin saken ?"
+                },
+                {
+                    "es_example": "A donde vas ?",
+                    "ar_example": "Fin ghadi ?"
+                },
+                {
+                    "es_example": "Donde ?!",
+                    "ar_example": "Fin ?!"
+                },
+                {
+                    "es_example": "Donde lo quieres ?",
+                    "ar_example": "Fin bghitih ?"
+                },
+                {
+                    "es_example": "A donde vamos ?",
+                    "ar_example": "Fin ghanemshiw ?"
+                }
+                
+            ]
+        },
+        {
+            "es_title": "Cual..?",
+            "ar_title": "Ina ua7ed..? / Ina u7da..? / Ina u7din..?",
+            "examples": [
+                {
+                    "es_example": "Cual te gusta mas ? (masc)",
+                    "ar_example": "Ina ua7ed li3jbek kter ?"
+                },
+                {
+                    "es_example": "Cual te gusta mas ? (fem)",
+                    "ar_example": "Ina u7da li3jbatk kter ?"
+                },
+                {
+                    "es_example": "Cual de estas ?",
+                    "ar_example": "Ina u7da f hadu ?"
+                },
+                {
+                    "es_example": "Cual de estos ?",
+                    "ar_example": "Ina ua7ed f hadu ?"
+                },
+                {
+                    "es_example": "Cuales son tuyos ?",
+                    "ar_example": "Ina u7din huuma diawlek ?"
+                },
+                {
+                    "es_example": "Cual ?!",
+                    "ar_example": "Ina ua7ed ?! / Ina u7da ?!"
+                }
+            ]
+        },
+        {
+            "es_title": "Cuanto..? / Cuantos..? / Cuantas..?",
+            "ar_title": "Sh7al..? / Sh7al men..? / Sh7al men..?",
+            "examples": [
+                {
+                    "es_example": "Cuanto tiempo tardas ?",
+                    "ar_example": "Sh7al t lwe9t ghat3ettel ?"
+                },
+                {
+                    "es_example": "Cuanto me vas a dar ?",
+                    "ar_example": "Sh7al ghat3tini ?"
+                },
+                {
+                    "es_example": "Cuanto cuesta esa camisa ?",
+                    "ar_example": "Sh7al dayra dik l9amija ?"
+                },
+                {
+                    "es_example": "Cuanto ?!",
+                    "ar_example": "Sh7al ?!"
+                },
+                {
+                    "es_example": "Cuanto crees ?",
+                    "ar_example": "Sh7al fnadark ?"
+                },
+                {
+                    "es_example": "Cuantos son ?",
+                    "ar_example": "Sh7al huuma ?"
+                },
+                {
+                    "es_example": "Cuantos van a ir ?",
+                    "ar_example": "Sh7al men ua7ed ghadi imshi ?"
+                },
+                {
+                    "es_example": "Cuantos pantalones tienes ?",
+                    "ar_example": "Sh7al men serual 3endk ?"
+                }                
+            ]
+        },
+        {
+            "es_title": "Porque..?",
+            "ar_title": "3lash..?",
+            "examples": [
+                {
+                    "es_example": "Porque comiste la manzana ?",
+                    "ar_example": "3lash kliti tefa7a ?"
+                },
+                {
+                    "es_example": "Porque tengo que ir ?",
+                    "ar_example": "3lash khasni nemshi ?"
+                },
+                {
+                    "es_example": "Porque ?!",
+                    "ar_example": "3lash ?!"
+                },
+                {
+                    "es_example": "Porque dices esto ?",
+                    "ar_example": "3lash katgul hadshi ?"
+                },
+                {
+                    "es_example": "Porque crees ... ?",
+                    "ar_example": "3lash fnadark ... ?"
+                }
+                
+            ]
+        }
+    ]
+}

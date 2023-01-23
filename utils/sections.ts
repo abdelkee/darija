@@ -6,6 +6,18 @@ export const data = [
         "path": "/pronombres"
     },
     {
+        "title": "Preguntas",
+        "img": "/img/pregunta.png",
+        "color": "#0284c7",
+        "path": "/preguntas"
+    },
+    {
+        "title": "Demostrativos",
+        "img": "/img/demostrativo.png",
+        "color": "#FFD1A3",
+        "path": "/demostrativos"
+    },
+    {
         "title": "Frases",
         "img": "/img/mashalah.png",
         "color": "#3B82F6",
@@ -28,12 +40,6 @@ export const data = [
         "img": "/img/tea.png",
         "color": "#22C55E",
         "path": "/alimentos"
-    },
-    {
-        "title": "Demostrativos",
-        "img": "/img/demostrativo.png",
-        "color": "#FFD1A3",
-        "path": "/demostrativos"
     },
     {
         "title": "Clima",

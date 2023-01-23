@@ -11,19 +11,19 @@ import { DemoPregDataType } from "../../types";
 type Props = {
   data: DemoPregDataType;
 };
-export default function DemoCard({ data }: Props) {
+export default function PreguntaCard({ data }: Props) {
   // ---- HOOKS
   const [isOpen, setIsOpen] = useState<boolean>(false);
   // ---- FUNCTIONS
   // ---- JSX
   return (
-    <div className="w-full p-4 bg-white border-l-4 rounded shadow-md odd:border-l-sky-600 even:border-l-pink-600">
+    <div className="w-full p-4 text-indigo-900 bg-white border-l-4 rounded shadow-md border-l-indigo-500 shadow-indigo-100">
       {/* DEMO NAME */}
-      <section className="relative flex items-center justify-between font-medium tracking-wide">
+      <section className="relative space-y-4 font-medium tracking-wide">
         <p>{data.es_title}</p>
         <p>{data.ar_title}</p>
         <button
-          className="absolute -bottom-4 left-[50%] -translate-x-[50%] text-gray-400"
+          className="absolute top-[50%] right-4 -translate-y-[50%] text-gray-400"
           onClick={() => setIsOpen((curr) => !curr)}
         >
           {isOpen ? (
@@ -38,9 +38,9 @@ export default function DemoCard({ data }: Props) {
       {isOpen && (
         <section className="p-2 mt-8 space-y-4 text-sm text-gray-400 divide-y-2 rounded divide-gray-100/80">
           {data.examples.map((example) => (
-            <div className="flex items-center justify-between pt-2">
-              <p>{example.es_example}</p>
-              <p>{example.ar_example}</p>
+            <div className="py-2 space-y-3">
+              <p className="text-left">{example.es_example}</p>
+              <p className="text-right">{example.ar_example}</p>
             </div>
           ))}
         </section>

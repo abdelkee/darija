@@ -55,7 +55,7 @@ export interface FrasesDataType {
     }[]
 }
 
-export interface DemoDataType {
+export interface DemoPregDataType {
     es_title: string
     ar_title: string
     examples: {
