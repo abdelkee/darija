@@ -6,7 +6,7 @@ export default function Preguntas({}: Props) {
   // ---- FUNCTIONS
   // ---- JSX
   return (
-    <main className="px-8 py-24">
+    <main className="px-4 py-24">
       <PreguntasList />
     </main>
   );
