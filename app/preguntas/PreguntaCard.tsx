@@ -17,7 +17,7 @@ export default function PreguntaCard({ data }: Props) {
   // ---- FUNCTIONS
   // ---- JSX
   return (
-    <div className="w-full p-4 text-indigo-900 bg-white border-l-4 rounded shadow-md border-l-indigo-500 shadow-indigo-100">
+    <div className="w-full p-4 text-indigo-900 bg-white border border-l-4 border-indigo-100 rounded shadow-md border-l-indigo-500 shadow-indigo-100">
       {/* DEMO NAME */}
       <section className="relative space-y-4 font-medium tracking-wide">
         <p>{data.es_title}</p>
@@ -36,7 +36,7 @@ export default function PreguntaCard({ data }: Props) {
 
       {/* MORE EXAMPLES */}
       {isOpen && (
-        <section className="p-2 mt-8 space-y-4 text-sm text-gray-400 divide-y-2 rounded divide-gray-100/80">
+        <section className="p-2 mt-8 space-y-4 text-sm text-gray-500 divide-y-2 rounded divide-gray-100/80">
           {data.examples.map((example) => (
             <div className="py-2 space-y-3">
               <p className="text-left">{example.es_example}</p>

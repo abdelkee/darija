@@ -1260,8 +1260,214 @@
             ]
         },
         {
-            "pronombreTitle": "ellos",
-            "testData": []
+            "pronombreTitle": "ellos / ellas",
+            "testData": [
+                {
+                    "question": "de ellos (masc)",
+                    "options": [
+                        {
+                            "answer": "dialhum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialkum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialtkum",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "de ellos (fem)",
+                    "options": [
+                        {
+                            "answer": "dialtha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dialthum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dialna",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "con ellos",
+                    "options": [
+                        {
+                            "answer": "m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "m3ahum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "su camisa (de ellos)",
+                    "options": [
+                        {
+                            "answer": "9amijtna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "9amijthum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "9amijtu",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "sus libros (de ellos)",
+                    "options": [
+                        {
+                            "answer": "ktubkum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktubna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "ktubhum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "de ellos (fem plur)",
+                    "options": [
+                        {
+                            "answer": "diawlna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "diawlhum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "diawlkum",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No son de ellos (masc plur)",
+                    "options": [
+                        {
+                            "answer": "Mashi diawlkum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlna",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Mashi diawlhum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "sus casas (de ellos) son limpias",
+                    "options": [
+                        {
+                            
+                            "answer": "dyuru n9iyin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "dyurhum n9iyin",
+                            "correct": true
+                        },
+                        {
+                            "answer": "dyurkum n9iyin",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "tagayut esta con ellos",
+                    "options": [
+                        {
+                            "answer": "tagayut kayn m3aha",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ah",
+                            "correct": false
+                        },
+                        {
+                            "answer": "tagayut kayn m3ahum",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Donde esta su (de ellos) casa?",
+                    "options": [
+                        {
+                            "answer": "Fin kayna darna?",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Fin kayna darhum?",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Fin kayna darkum?",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Si! es de ellos (fem)",
+                    "options": [
+                        {
+                            "answer": "Ah! dialtkum",
+                            "correct": false
+                        },
+                        {
+                            "answer": "Ah! dialthum",
+                            "correct": true
+                        },
+                        {
+                            "answer": "Ah! dialtha",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "question": "su (de ellos) cuarto es bonito ",
+                    "options": [
+                        {
+                            "answer": "bitna zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bitu zwin",
+                            "correct": false
+                        },
+                        {
+                            "answer": "bithum zwin",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

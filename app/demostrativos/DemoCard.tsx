@@ -17,7 +17,7 @@ export default function DemoCard({ data }: Props) {
   // ---- FUNCTIONS
   // ---- JSX
   return (
-    <div className="w-full p-4 bg-white border-l-4 rounded shadow-md odd:border-l-sky-600 even:border-l-pink-600">
+    <div className="w-full p-4 bg-white border border-l-4 border-gray-100 rounded shadow-md odd:border-l-sky-600 even:border-l-pink-600">
       {/* DEMO NAME */}
       <section className="relative flex items-center justify-between font-medium tracking-wide">
         <p>{data.es_title}</p>
@@ -36,7 +36,7 @@ export default function DemoCard({ data }: Props) {
 
       {/* MORE EXAMPLES */}
       {isOpen && (
-        <section className="p-2 mt-8 space-y-4 text-sm text-gray-400 divide-y-2 rounded divide-gray-100/80">
+        <section className="p-2 mt-8 space-y-4 text-sm text-gray-500 divide-y-2 rounded divide-gray-100/80">
           {data.examples.map((example) => (
             <div className="flex items-center justify-between pt-2">
               <p>{example.es_example}</p>
