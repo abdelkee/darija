@@ -18,6 +18,12 @@ export const data = [
         "path": "/demostrativos"
     },
     {
+        "title": "Preposiciones",
+        "img": "/img/preposicion.png",
+        "color": "#f472b6",
+        "path": "/preposiciones"
+    },
+    {
         "title": "Frases",
         "img": "/img/mashalah.png",
         "color": "#3B82F6",
