@@ -227,6 +227,21 @@
                 }
                 
             ]
+        },
+        {
+            "es_title": "Para que..?",
+            "ar_title": "Lash..?",
+            "examples": [
+                {
+                    "es_example": "Para que quieres esto ?",
+                    "ar_example": "Lash bghiti hadshi ?"
+                },
+                {
+                    "es_example": "Para que sirve ?",
+                    "ar_example": "Lash lay9 ?"
+                }
+                
+            ]
         }
     ]
 }

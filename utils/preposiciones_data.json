@@ -5,37 +5,13 @@
             "ar_title": ":)",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Jango fue a comer",
+                    "ar_example": "Jango msha yakul"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Se fue al parque",
+                    "ar_example": "Msha ljerda"
                 }
-                
-            ]
-        },
-        {
-            "es_title": "Ante",
-            "ar_title": "Gudam",
-            "examples": [
-                {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
-                }
-                
             ]
         },
         {
@@ -47,14 +23,9 @@
                     "ar_example": "Jango kayn te7t tabla"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Esta debajo las escaleras",
+                    "ar_example": "Kayn te7t druj"
                 }
-                
             ]
         },
         {
@@ -62,35 +33,38 @@
             "ar_title": "Fu9",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Mi libro esta sobre la mesa",
+                    "ar_example": "Ktabi kayn fu9 tabla"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "El chocolate esta sobre la refri",
+                    "ar_example": "Shoklat kayn fu9 telaja"
                 }
-                
             ]
         },
         {
             "es_title": "Con",
-            "ar_title": "M3a",
+            "ar_title": "M3a / B",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "El gato esta con jango",
+                    "ar_example": "Lmesh kayn m3a jango"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Ahora estoy con la familia",
+                    "ar_example": "daba kayn m3a l3a-ila"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Quieres cafe con leche ?",
+                    "ar_example": "Bghiti l9ahwa b l7lib ?"
+                },
+                {
+                    "es_example": "Tratalo con respeto",
+                    "ar_example": "3amlu b 7tiram"
+                },
+                {
+                    "es_example": "Anoche me quede con hambre",
+                    "ar_example": "Lbare7 b9it b ju3"
                 }
                 
             ]
@@ -100,16 +74,16 @@
             "ar_title": "Dial",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "La casa de mis padres",
+                    "ar_example": "Dar dial walidia"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Quiero un telefono de 2023",
+                    "ar_example": "Bghit wa7d tilifun dial 2023"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Me das un plato de arroz",
+                    "ar_example": "3tini wa7d tebsil dial roz"
                 }
                 
             ]
@@ -119,16 +93,16 @@
             "ar_title": "Men",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Vine desde Ecuador",
+                    "ar_example": "Jit men lecuador"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Desde que empece no descanse",
+                    "ar_example": "Men li bdit mastara7itsh"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Desde cuando y tu estas aqui ?",
+                    "ar_example": "Men imta u nta kayn hna ?"
                 }
                 
             ]
@@ -138,16 +112,16 @@
             "ar_title": "F",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Tu comida esta en la refri",
+                    "ar_example": "Makeltek kayna f telaja"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Nos encontramos en el parque",
+                    "ar_example": "Netla9aw f jerda"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "En que vas a ir ?",
+                    "ar_example": "F ash ghadi temshi ?"
                 }
                 
             ]
@@ -157,75 +131,79 @@
             "ar_title": "Bin",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Esta entre tus piernas",
+                    "ar_example": "Kayn bin rejlik"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Sabes el lugar que esta entre el parque y la escuela",
+                    "ar_example": "3refti lblasa li kayna bin jerda u lmedrasa"
                 }
-                
             ]
         },
         {
             "es_title": "Hacia",
-            "ar_title": "Jiht / Mgabel",
+            "ar_title": "Jiht",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "El carro viene hacia ti",
+                    "ar_example": "Tomobil jaya jihtk"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
-                },
-                {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Mira hacia la pared",
+                    "ar_example": "Shuf jiht l7it"
                 }
-                
             ]
         },
         {
             "es_title": "Mientras",
-            "ar_title": "Binma",
+            "ar_title": "Binma / Ma7ed",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Anda prepara la comida mientras termino de limpiar",
+                    "ar_example": "Sir ujed lmakla binma nkemel tekhmal"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Mientra estoy aqui no hagas ruido",
+                    "ar_example": "Ma7edi kayn hna madirsh sda3"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Anda trabaja mientras esta el internet",
+                    "ar_example": "Sir khdem ma7ed kayn linternet"
                 }
                 
             ]
         },
         {
-            "es_title": "Para / Por",
+            "es_title": "Para",
             "ar_title": "Bash",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Enseñame como para poder hacer sola",
+                    "ar_example": "3lemni kifash bash ne9der ndir bu7di"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Abre la puerta para que tu papi entre",
+                    "ar_example": "7el lbab bash babak idkhul"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Traje la comida para comer juntos",
+                    "ar_example": "Jebt lmakla bash naklu bjuj "
                 }
                 
+            ]
+        },
+        {
+            "es_title": "Por",
+            "ar_title": "3la",
+            "examples": [
+                {
+                    "es_example": "Por esto hiciste todo este trabajo ?",
+                    "ar_example": "3la hadshi derti ga3 had lkhedma ?"
+                },
+                {
+                    "es_example": "No fui por ti",
+                    "ar_example": "Mamshitsh 3la 9eblek"
+                }
             ]
         },
         {
@@ -233,16 +211,16 @@
             "ar_title": "Bla",
             "examples": [
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Dame ensalada sin mayonesa",
+                    "ar_example": "3tini shlada bla mayonez"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Se fue sin comer",
+                    "ar_example": "Msha bla mayakul"
                 },
                 {
-                    "es_example": "",
-                    "ar_example": ""
+                    "es_example": "Sin ti todo es aburrido",
+                    "ar_example": "Bla bik kulshi mumil"
                 }
                 
             ]
@@ -364,6 +342,25 @@
         {
             "es_title": "Adelante",
             "ar_title": "L9udam",
+            "examples": [
+                {
+                    "es_example": "",
+                    "ar_example": ""
+                },
+                {
+                    "es_example": "",
+                    "ar_example": ""
+                },
+                {
+                    "es_example": "",
+                    "ar_example": ""
+                }
+                
+            ]
+        },
+        {
+            "es_title": "Ante",
+            "ar_title": "Gudam",
             "examples": [
                 {
                     "es_example": "",
